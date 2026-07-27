@@ -428,10 +428,11 @@ const Hero = () => {
         className="absolute inset-0 z-0"
       >
         <img 
-          src="https://images.unsplash.com/photo-1541976590-7139196c529d?q=80&w=2070&auto=format&fit=crop"
-          alt="Modern Architecture"
-          className="w-full h-full object-cover opacity-40 mix-blend-overlay"
-          referrerPolicy="no-referrer"
+          src="/hero-bg.jpg"
+          alt="Modern Corporate Building"
+          loading="eager"
+          decoding="async"
+          className="w-full h-full object-cover opacity-50 mix-blend-luminosity brightness-110"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/40 via-transparent to-zinc-950" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(159,197,233,0.1)_0%,transparent_50%)]" />
