@@ -64,7 +64,7 @@ const CATEGORIES: Record<string, CategoryData> = {
     items: [
       { title: "Featured Developments", description: "Our award-winning architectural masterworks.", href: "/projects/featured", icon: Star },
       { title: "Ongoing Initiatives", description: "Real-time updates of active supervisor sites.", href: "/projects/ongoing", icon: Activity },
-      { title: "Completed Portfolio", description: "Explore 15+ years of successfully delivered spaces.", href: "/projects/completed", icon: CheckCircle2 }
+      { title: "Completed Portfolio", description: "Explore 25+ years of successfully delivered spaces.", href: "/projects/completed", icon: CheckCircle2 }
     ]
   },
   Team: {

@@ -86,7 +86,7 @@ const PageLoader = () => (
 // --- Constants & Types ---
 
 const STATS = [
-  { label: 'Excellence Years', value: '15+', icon: Globe },
+  { label: 'Years Excellence', value: '25+', icon: Globe },
   { label: 'Projects Completed', value: '250+', icon: Building2 },
   { label: 'Client Satisfaction', value: '98%', icon: Users },
   { label: 'Sq Ft Constructed', value: '12M+', icon: BarChart3 },
