@@ -562,13 +562,13 @@ const ServicesShowcase = () => {
     <section className="py-20 bg-zinc-50 border-b border-zinc-100 relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-[10px] font-black uppercase tracking-[0.4em] text-red-600 bg-red-50 border border-red-100 px-4 py-1.5 rounded-full inline-block mb-4">
+          <span className="text-[10px] font-black uppercase tracking-[0.4em] text-teal-600 bg-teal-50 border border-teal-100 px-4 py-1.5 rounded-full inline-block mb-4">
             Core Infrastructure Capabilities
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-zinc-900 tracking-tight font-sans">
+          <h2 className="text-3xl md:text-5xl font-black text-zinc-900 tracking-tight font-sans">
             Comprehensive Engineering & Construction Services
           </h2>
-          <div className="w-16 h-1 bg-red-600 mx-auto mt-4 rounded-full" />
+          <div className="w-16 h-1 bg-teal-500 mx-auto mt-4 rounded-full" />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -582,15 +582,15 @@ const ServicesShowcase = () => {
                 transition={{ duration: 0.4, delay: idx * 0.06 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -6 }}
-                className="bg-white p-8 rounded-2xl border border-zinc-100 border-b-4 border-b-red-600 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group cursor-default"
+                className="bg-white p-8 rounded-2xl border border-zinc-100 border-b-4 border-b-teal-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group cursor-default"
               >
-                <div className="w-16 h-16 rounded-2xl bg-red-50/80 border border-red-100 flex items-center justify-center text-red-600 mb-6 group-hover:bg-red-600 group-hover:text-white transition-all duration-300 transform group-hover:scale-110 shadow-sm">
+                <div className="w-16 h-16 rounded-2xl bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-600 mb-6 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300 transform group-hover:scale-110 shadow-sm">
                   <Icon size={30} strokeWidth={1.75} />
                 </div>
-                <h3 className="text-lg font-bold text-zinc-900 group-hover:text-red-600 transition-colors mb-1">
+                <h3 className="text-lg font-bold text-zinc-900 group-hover:text-teal-600 transition-colors mb-1">
                   {service.title}
                 </h3>
-                <p className="text-[11px] font-bold text-red-600 uppercase tracking-wider mb-3">
+                <p className="text-[11px] font-bold text-teal-600 uppercase tracking-wider mb-3">
                   {service.subtitle}
                 </p>
                 <p className="text-xs text-zinc-600 leading-relaxed font-light">
