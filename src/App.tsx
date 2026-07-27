@@ -489,7 +489,7 @@ const Hero = () => {
           transition={{ delay: 1.2 }}
           className="flex flex-col items-center gap-6"
         >
-          <a href="#about" className="group flex items-center gap-2 bg-teal-500 text-white px-8 py-4 rounded-full font-bold tracking-widest uppercase text-xs transition-all hover:scale-105 active:scale-95 shadow-xl shadow-teal-900/20">
+          <a href="#bio" className="group flex items-center gap-2 bg-teal-500 text-white px-8 py-4 rounded-full font-bold tracking-widest uppercase text-xs transition-all hover:scale-105 active:scale-95 shadow-xl shadow-teal-900/20">
             Discover Our Legacy
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
@@ -626,7 +626,7 @@ const ServicesShowcase = () => {
 
 const BioSection = () => {
   return (
-    <section className="py-12 sm:py-20 lg:py-24 bg-gradient-to-br from-teal-50/40 via-slate-50 to-teal-50/20 relative overflow-hidden border-b border-zinc-200/60">
+    <section id="bio" className="py-12 sm:py-20 lg:py-24 bg-gradient-to-br from-teal-50/40 via-slate-50 to-teal-50/20 relative overflow-hidden border-b border-zinc-200/60 scroll-mt-20">
       {/* Background Architectural Blueprint Dot Pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(#0d9488_1px,transparent_1px)] [background-size:20px_20px] sm:[background-size:28px_28px] opacity-[0.12] pointer-events-none" />
 
