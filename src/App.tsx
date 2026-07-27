@@ -626,92 +626,98 @@ const ServicesShowcase = () => {
 
 const BioSection = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-slate-50 via-teal-50/20 to-white relative overflow-hidden border-b border-zinc-100">
-      {/* Background Architectural Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0d948808_1px,transparent_1px),linear-gradient(to_bottom,#0d948808_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none" />
+    <section className="py-24 bg-gradient-to-br from-teal-50/40 via-slate-50 to-teal-50/20 relative overflow-hidden border-b border-zinc-200/60">
+      {/* Background Architectural Blueprint Dot Pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(#0d9488_1px,transparent_1px)] [background-size:28px_28px] opacity-[0.12] pointer-events-none" />
 
       {/* Floating Ambient Glowing Blobs */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-teal-500/10 rounded-full blur-[140px] pointer-events-none -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-sky-500/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 -left-20 w-[500px] h-[500px] bg-teal-400/15 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute bottom-10 right-0 w-[450px] h-[450px] bg-sky-400/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="bg-white/70 backdrop-blur-2xl border border-white/80 p-8 sm:p-12 lg:p-16 rounded-[3rem] shadow-[0_20px_60px_-15px_rgba(13,148,136,0.08)] relative overflow-hidden">
           
-          {/* Left Column: Image with Backdrop Framing */}
-          <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="lg:col-span-6 relative"
-          >
-            {/* Background Decorative Frame & City Skyline Accent Pattern */}
-            <div className="absolute -inset-4 bg-teal-500/10 rounded-[3rem] transform -rotate-1 scale-[0.98] pointer-events-none" />
-            <div className="absolute -left-6 -bottom-6 w-48 h-48 bg-teal-100/50 rounded-3xl -z-10 blur-sm" />
+          {/* Subtle Top Accent Gradient Stripe */}
+          <div className="absolute top-0 left-0 right-0 h-[4px] bg-gradient-to-r from-teal-500 via-emerald-400 to-sky-500" />
 
-            <div className="relative rounded-[2.5rem] overflow-hidden border border-zinc-200/80 shadow-2xl bg-white aspect-[4/3] group">
-              <img 
-                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop" 
-                alt="Infrastructure Building Excellence" 
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-transparent" />
-              
-              {/* Floating Badge */}
-              <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md border border-zinc-200/60 px-5 py-3 rounded-2xl shadow-lg flex items-center gap-3">
-                <div className="w-3 h-3 rounded-full bg-teal-500 animate-pulse" />
-                <div>
-                  <p className="text-[10px] font-black uppercase text-zinc-400 tracking-wider">Established</p>
-                  <p className="text-sm font-extrabold text-zinc-900">2001 • 25+ Years Legacy</p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            {/* Left Column: Image with City Skyline Grid Backdrop */}
+            <motion.div 
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="lg:col-span-6 relative"
+            >
+              {/* Background Architectural Building Grid Graphic (Matches Reference) */}
+              <div className="absolute -inset-6 bg-[repeating-linear-gradient(0deg,transparent,transparent_12px,rgba(13,148,136,0.06)_12px,rgba(13,148,136,0.06)_13px),repeating-linear-gradient(90deg,transparent,transparent_12px,rgba(13,148,136,0.06)_12px,rgba(13,148,136,0.06)_13px)] rounded-[3rem] pointer-events-none" />
+              <div className="absolute -left-6 -bottom-6 w-48 h-48 bg-teal-100/60 rounded-3xl -z-10 blur-sm" />
+
+              <div className="relative rounded-[2.5rem] overflow-hidden border border-zinc-200/80 shadow-2xl bg-white aspect-[4/3] group">
+                <img 
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop" 
+                  alt="Infrastructure Building Excellence" 
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/40 via-transparent to-transparent" />
+                
+                {/* Floating Badge */}
+                <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur-md border border-zinc-200/80 px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                  <div className="w-3 h-3 rounded-full bg-teal-500 animate-pulse" />
+                  <div>
+                    <p className="text-[10px] font-black uppercase text-zinc-400 tracking-wider">Established</p>
+                    <p className="text-sm font-extrabold text-zinc-900">2001 • 25+ Years Legacy</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
 
-          {/* Right Column: Bio Content */}
-          <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="lg:col-span-6 flex flex-col justify-center"
-          >
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-teal-600 bg-teal-50 border border-teal-100 px-4 py-1.5 rounded-full inline-block w-fit mb-6 shadow-sm">
-              About Us
-            </span>
+            {/* Right Column: Bio Content */}
+            <motion.div 
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="lg:col-span-6 flex flex-col justify-center"
+            >
+              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-teal-600 bg-teal-50/90 border border-teal-200/60 px-4 py-1.5 rounded-full inline-block w-fit mb-6 shadow-sm">
+                About Us
+              </span>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-zinc-900 tracking-tight mb-6 leading-tight font-sans">
-              Building Excellence <br />
-              <span className="text-teal-600 font-serif italic">Since 2001</span>
-            </h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-zinc-900 tracking-tight mb-6 leading-tight font-sans">
+                Building Excellence <br />
+                <span className="text-teal-600 font-serif italic">Since 2001</span>
+              </h2>
 
-            <p className="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6 font-light">
-              Established in <strong className="font-bold text-zinc-900">2001</strong>, we are a leading multidisciplinary architecture, engineering, and project management consultancy delivering innovative, sustainable, and high-impact infrastructure solutions. Backed by a team of experienced architects, engineers, planners, and technical experts, we specialize in transforming ideas into landmark projects—from concept and design to execution.
-            </p>
+              <p className="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6 font-light">
+                Established in <strong className="font-bold text-zinc-900">2001</strong>, we are a leading multidisciplinary architecture, engineering, and project management consultancy delivering innovative, sustainable, and high-impact infrastructure solutions. Backed by a team of experienced architects, engineers, planners, and technical experts, we specialize in transforming ideas into landmark projects—from concept and design to execution.
+              </p>
 
-            <p className="text-zinc-600 text-sm sm:text-base leading-relaxed mb-8 font-light">
-              With expertise spanning <strong className="font-bold text-zinc-900">architecture, urban planning, structural engineering, environmental consultancy, PMC, turnkey construction, and infrastructure development</strong>, we have successfully delivered projects that combine technical excellence, quality, and long-term value. Our integrated approach, strong industry expertise, and commitment to innovation make us a trusted partner for government, institutional, commercial, and private sector developments.
-            </p>
+              <p className="text-zinc-600 text-sm sm:text-base leading-relaxed mb-8 font-light">
+                With expertise spanning <strong className="font-bold text-zinc-900">architecture, urban planning, structural engineering, environmental consultancy, PMC, turnkey construction, and infrastructure development</strong>, we have successfully delivered projects that combine technical excellence, quality, and long-term value. Our integrated approach, strong industry expertise, and commitment to innovation make us a trusted partner for government, institutional, commercial, and private sector developments.
+              </p>
 
-            <div className="flex flex-wrap items-center gap-4">
-              <Link 
-                to="/about/our-story" 
-                className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-7 py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg shadow-teal-600/20 hover:scale-105 active:scale-95 group"
-              >
-                Learn More About Us
-                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <a 
-                href="#connect" 
-                className="inline-flex items-center gap-2 bg-white hover:bg-zinc-50 border border-zinc-200 text-zinc-800 px-7 py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-sm"
-              >
-                Contact Our Experts
-              </a>
-            </div>
-          </motion.div>
+              <div className="flex flex-wrap items-center gap-4">
+                <Link 
+                  to="/about/our-story" 
+                  className="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-7 py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg shadow-teal-600/20 hover:scale-105 active:scale-95 group"
+                >
+                  Learn More About Us
+                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <a 
+                  href="#connect" 
+                  className="inline-flex items-center gap-2 bg-white hover:bg-zinc-50 border border-zinc-200 text-zinc-800 px-7 py-3.5 rounded-xl font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-sm"
+                >
+                  Contact Our Experts
+                </a>
+              </div>
+            </motion.div>
 
+          </div>
         </div>
       </div>
     </section>
