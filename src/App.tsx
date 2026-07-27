@@ -508,52 +508,74 @@ const Hero = () => {
 
 const CORE_SERVICES = [
   {
-    title: "Transportation",
-    subtitle: "Road & Rail Infrastructure",
-    desc: "We build robust and durable highways, flyovers, and bridges for seamless connectivity.",
-    icon: Compass
-  },
-  {
-    title: "Social Infrastructure",
-    subtitle: "Medical & Educational Hubs",
-    desc: "Building modern healthcare complexes, hospitals, and schools for a better future.",
-    icon: Building2
-  },
-  {
-    title: "Energy & Utilities",
-    subtitle: "Power & Renewable Energy",
-    desc: "In renewable energy, we engineer solar projects while managing power & gas grids.",
-    icon: Zap
-  },
-  {
-    title: "Water & Sewerage",
-    subtitle: "Public Health Engineering",
-    desc: "Protecting public health & environment through efficient water & sewerage management.",
-    icon: Droplet
-  },
-  {
-    title: "Environment & Heritage",
-    subtitle: "Eco-Friendly Conservation",
-    desc: "Building a sustainable future through eco-solutions & heritage monument restoration.",
-    icon: Globe
-  },
-  {
-    title: "Industrial Projects",
-    subtitle: "Commercial & Manufacturing",
-    desc: "Creating highly efficient, functional industrial parks and turnkey facilities.",
-    icon: Cpu
-  },
-  {
-    title: "Specialized Construction",
-    subtitle: "Customized Project Approach",
-    desc: "Tailored engineering solutions for complex, high-rise, and unique projects.",
+    title: "Architecture",
+    desc: "Innovative architectural design solutions for residential, commercial, and institutional projects.",
     icon: DraftingCompass
   },
   {
-    title: "Urban Development",
-    subtitle: "Smart Urban Transformation",
-    desc: "Designing and building vibrant, sustainable smart cities and residential communities.",
+    title: "Urban Planning",
+    desc: "Master planning, township development, and sustainable urban infrastructure.",
     icon: Target
+  },
+  {
+    title: "PMC Services",
+    desc: "End-to-end project planning, monitoring, and execution management.",
+    icon: ShieldCheck
+  },
+  {
+    title: "Turnkey Construction",
+    desc: "Complete design-to-delivery construction solutions under one roof.",
+    icon: Building2
+  },
+  {
+    title: "Structural Engineering",
+    desc: "Safe, efficient, and code-compliant structural design for every project.",
+    icon: Cpu
+  },
+  {
+    title: "MEP Engineering",
+    desc: "Integrated mechanical, electrical, plumbing, and utility systems.",
+    icon: Zap
+  },
+  {
+    title: "Interior Design",
+    desc: "Functional, modern, and aesthetically crafted interior spaces.",
+    icon: Layers
+  },
+  {
+    title: "Construction Supervision",
+    desc: "Quality control, site management, and timely project execution.",
+    icon: UserCheck
+  },
+  {
+    title: "Quantity Surveying",
+    desc: "Accurate estimation, cost planning, and contract administration.",
+    icon: Calculator
+  },
+  {
+    title: "Infrastructure Development",
+    desc: "Roads, utilities, public infrastructure, and urban development projects.",
+    icon: Compass
+  },
+  {
+    title: "Environmental & Ecology",
+    desc: "Sustainable environmental planning and ecological assessments.",
+    icon: Globe
+  },
+  {
+    title: "Heritage Conservation",
+    desc: "Restoration, conservation, and adaptive reuse of heritage structures.",
+    icon: Trophy
+  },
+  {
+    title: "Landscape Design",
+    desc: "Outdoor environments that blend aesthetics with functionality.",
+    icon: Sparkles
+  },
+  {
+    title: "Survey & DPR",
+    desc: "Topographical surveys, feasibility studies, and comprehensive DPR preparation.",
+    icon: Eye
   }
 ];
 
@@ -563,10 +585,10 @@ const ServicesShowcase = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[10px] font-black uppercase tracking-[0.4em] text-teal-600 bg-teal-50 border border-teal-100 px-4 py-1.5 rounded-full inline-block mb-4">
-            Core Infrastructure Capabilities
+            Our Core Capabilities
           </span>
           <h2 className="text-3xl md:text-5xl font-black text-zinc-900 tracking-tight font-sans">
-            Comprehensive Engineering & Construction Services
+            Comprehensive Infrastructure & Engineering Services
           </h2>
           <div className="w-16 h-1 bg-teal-500 mx-auto mt-4 rounded-full" />
         </div>
@@ -579,20 +601,17 @@ const ServicesShowcase = () => {
                 key={service.title}
                 initial={{ opacity: 0, y: 25 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: idx * 0.06 }}
+                transition={{ duration: 0.4, delay: idx * 0.04 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -6 }}
-                className="bg-white p-8 rounded-2xl border border-zinc-100 border-b-4 border-b-teal-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group cursor-default"
+                className="bg-white p-7 rounded-2xl border border-zinc-100 border-b-4 border-b-teal-500 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center group cursor-default"
               >
-                <div className="w-16 h-16 rounded-2xl bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-600 mb-6 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300 transform group-hover:scale-110 shadow-sm">
-                  <Icon size={30} strokeWidth={1.75} />
+                <div className="w-14 h-14 rounded-2xl bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-600 mb-5 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300 transform group-hover:scale-110 shadow-sm">
+                  <Icon size={26} strokeWidth={1.75} />
                 </div>
-                <h3 className="text-lg font-bold text-zinc-900 group-hover:text-teal-600 transition-colors mb-1">
+                <h3 className="text-base font-bold text-zinc-900 group-hover:text-teal-600 transition-colors mb-2">
                   {service.title}
                 </h3>
-                <p className="text-[11px] font-bold text-teal-600 uppercase tracking-wider mb-3">
-                  {service.subtitle}
-                </p>
                 <p className="text-xs text-zinc-600 leading-relaxed font-light">
                   {service.desc}
                 </p>
