@@ -250,21 +250,21 @@ const BrandTickerItem = ({ brand }: { brand: { name: string; logo: string }; key
 
 const BrandsTicker = () => {
   return (
-    <div className="py-20 bg-white border-y border-zinc-100 overflow-hidden whitespace-nowrap relative group">
-      <div className="max-w-7xl mx-auto px-6 mb-12 flex items-center gap-4">
-        <h2 className="text-[10px] font-black uppercase tracking-[0.4em] text-zinc-400">Prestigious Collaborations</h2>
-        <div className="h-[1px] flex-grow bg-zinc-100" />
+    <div className="py-10 sm:py-20 bg-white border-y border-zinc-100 overflow-hidden whitespace-nowrap relative group">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-6 sm:mb-12 flex items-center gap-4">
+        <h2 className="text-[10px] sm:text-[11px] font-black uppercase tracking-[0.3em] sm:tracking-[0.4em] text-zinc-700">Prestigious Collaborations</h2>
+        <div className="h-[1px] flex-grow bg-zinc-200" />
       </div>
       
-      <div className="absolute left-0 top-0 w-48 h-full bg-gradient-to-r from-white via-white/80 to-transparent z-20 pointer-events-none" />
-      <div className="absolute right-0 top-0 w-48 h-full bg-gradient-to-l from-white via-white/80 to-transparent z-20 pointer-events-none" />
+      <div className="absolute left-0 top-0 w-8 sm:w-48 h-full bg-gradient-to-r from-white via-white/80 to-transparent z-20 pointer-events-none" />
+      <div className="absolute right-0 top-0 w-8 sm:w-48 h-full bg-gradient-to-l from-white via-white/80 to-transparent z-20 pointer-events-none" />
       
       <motion.div 
         animate={{ x: ["0%", "-50%"] }}
         transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
         className="inline-block"
       >
-        <div className="flex gap-24 items-center px-12">
+        <div className="flex gap-10 sm:gap-24 items-center px-4 sm:px-12">
           {[...BRANDS, ...BRANDS, ...BRANDS].map((brand, i) => (
             <BrandTickerItem key={i} brand={brand} />
           ))}
@@ -1400,30 +1400,30 @@ const tickerServices = [
 
 const ServicesTicker = () => {
   return (
-    <section className="py-24 bg-zinc-950 overflow-hidden relative">
-      <div className="max-w-7xl mx-auto px-6 mb-16">
-        <h2 className="text-teal-400/40 text-sm font-bold tracking-[0.3em] uppercase mb-6 flex items-center gap-3">
-          <span className="w-12 h-[1px] bg-teal-500/20" /> Our Expertise
+    <section className="py-14 sm:py-24 bg-zinc-950 overflow-hidden relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-16">
+        <h2 className="text-teal-400 text-xs sm:text-sm font-extrabold tracking-[0.3em] uppercase mb-4 sm:mb-6 flex items-center gap-3">
+          <span className="w-8 sm:w-12 h-[1px] bg-teal-400/40" /> Our Expertise
         </h2>
-        <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Broad Spectrum <span className="italic font-serif text-teal-200/50 text-6xl">Services.</span></h3>
+        <h3 className="text-3xl sm:text-5xl font-black text-white tracking-tight">Broad Spectrum <span className="italic font-serif text-teal-300 text-4xl sm:text-6xl">Services.</span></h3>
       </div>
       
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-4 sm:gap-6">
         {[0, 1].map((row) => (
           <motion.div 
             key={row}
             animate={{ x: row === 0 ? ["0%", "-50%"] : ["-50%", "0%"] }}
             transition={{ duration: 70, repeat: Infinity, ease: "linear" }}
-            className="flex whitespace-nowrap gap-6"
+            className="flex whitespace-nowrap gap-4 sm:gap-6"
           >
             {[...tickerServices, ...tickerServices].map((service, i) => (
-              <div key={i} className="flex-shrink-0 bg-white/5 border border-white/10 px-10 py-8 rounded-[32px] flex items-center gap-8 min-w-[340px] hover:bg-white/10 hover:border-teal-500/30 transition-all cursor-default group">
-                <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/5 flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-teal-500 transition-all">
-                  <service.icon size={28} />
+              <div key={i} className="flex-shrink-0 bg-white/5 border border-white/10 px-6 sm:px-10 py-5 sm:py-8 rounded-[24px] sm:rounded-[32px] flex items-center gap-5 sm:gap-8 min-w-[260px] sm:min-w-[340px] hover:bg-white/10 hover:border-teal-500/40 transition-all cursor-default group">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white/10 border border-white/5 flex items-center justify-center text-white group-hover:scale-110 group-hover:bg-teal-500 transition-all">
+                  <service.icon size={24} />
                 </div>
                 <div>
-                  <p className="text-white font-bold text-sm tracking-widest uppercase">{service.name}</p>
-                  <p className="text-teal-400/30 text-[10px] font-medium uppercase tracking-[0.2em] mt-1">Sanchar Excellence</p>
+                  <p className="text-white font-bold text-xs sm:text-sm tracking-widest uppercase">{service.name}</p>
+                  <p className="text-teal-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-1">Sanchar Excellence</p>
                 </div>
               </div>
             ))}
@@ -1431,8 +1431,8 @@ const ServicesTicker = () => {
         ))}
       </div>
 
-      <div className="absolute left-0 top-0 w-48 h-full bg-gradient-to-r from-zinc-950 to-transparent z-10 pointer-events-none" />
-      <div className="absolute right-0 top-0 w-48 h-full bg-gradient-to-l from-zinc-950 to-transparent z-10 pointer-events-none" />
+      <div className="absolute left-0 top-0 w-8 sm:w-48 h-full bg-gradient-to-r from-zinc-950 to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 w-8 sm:w-48 h-full bg-gradient-to-l from-zinc-950 to-transparent z-10 pointer-events-none" />
     </section>
   );
 };
@@ -1805,36 +1805,36 @@ const Sectors = () => {
 
 const VastuSection = () => {
   return (
-    <section id="consultancy" className="py-24 bg-zinc-950 relative overflow-hidden">
+    <section id="consultancy" className="py-14 sm:py-24 bg-zinc-950 relative overflow-hidden">
       <div className="absolute -top-24 -left-20 w-1/2 h-full opacity-[0.03] pointer-events-none">
         <Sun className="w-full h-full text-teal-400 -rotate-12" />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-teal-400/40 text-sm font-bold tracking-[0.3em] uppercase mb-6 flex items-center gap-3">
-               <span className="w-12 h-[1px] bg-teal-500/20" /> Cosmic Alignment
+            <h2 className="text-teal-400 text-xs sm:text-sm font-extrabold tracking-[0.3em] uppercase mb-4 sm:mb-6 flex items-center gap-3">
+               <span className="w-8 sm:w-12 h-[1px] bg-teal-400/40" /> Cosmic Alignment
             </h2>
-            <h3 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-8 font-sans">
+            <h3 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight mb-6 sm:mb-8 font-sans leading-tight">
               Expert Vastu <br />
-              <span className="italic font-serif text-teal-200/40 text-7xl md:text-8xl">Consultancy.</span>
+              <span className="italic font-serif text-teal-300 text-4xl sm:text-7xl lg:text-8xl">Consultancy.</span>
             </h3>
-            <p className="text-zinc-400 text-xl mb-10 leading-relaxed max-w-lg font-light">
+            <p className="text-zinc-300 text-sm sm:text-xl mb-6 sm:mb-10 leading-relaxed max-w-lg font-normal">
               We harmonize modern architectural precision with ancient spatial wisdom. Our dedicated Vedic consultants ensure every square inch radiates prosperity and equilibrium.
             </p>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6">
               {[
                 { t: 'Energy Mapping', d: 'Strategic flow analysis.' },
                 { t: 'Spatial Balance', d: 'Optimized orientation.' }
               ].map(item => (
-                <div key={item.t} className="p-6 bg-white/5 border border-white/10 rounded-2xl group hover:border-teal-500/40 transition-colors">
-                  <p className="text-teal-300 font-bold text-xs uppercase tracking-widest mb-2">{item.t}</p>
-                  <p className="text-white/40 text-[10px] leading-tight">{item.d}</p>
+                <div key={item.t} className="p-4 sm:p-6 bg-white/5 border border-white/10 rounded-2xl group hover:border-teal-500/40 transition-colors">
+                  <p className="text-teal-300 font-bold text-xs uppercase tracking-widest mb-1 sm:mb-2">{item.t}</p>
+                  <p className="text-zinc-300 text-xs sm:text-sm leading-snug">{item.d}</p>
                 </div>
               ))}
             </div>
