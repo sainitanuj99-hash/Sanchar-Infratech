@@ -2311,8 +2311,6 @@ export default function App() {
                 <BrandsTicker />
                 <QualitySection />
                 <StatsSection />
-                <ServicesTicker />
-                <AboutSection />
                 <Sectors />
                 <ProjectsSection />
                 <TransparencySection />
