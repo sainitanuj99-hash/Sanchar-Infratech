@@ -100,7 +100,7 @@ export const SubPageLayout = ({ title, category, description, cards, galleryImag
                           alt={card.title} 
                           loading="lazy"
                           decoding="async"
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover object-[center_top]"
                           style={card.zoom ? { transform: `scale(${card.zoom})`, transformOrigin: 'center 20%' } : undefined}
                           referrerPolicy="no-referrer"
                         />

@@ -300,15 +300,15 @@ export default function AboutUsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {LEADERSHIP.map((person) => (
-              <div key={person.name} className="bg-zinc-900/60 border border-zinc-800 p-4 rounded-3xl group shadow-lg flex flex-col justify-between">
+              <div key={person.name} className="bg-zinc-900/60 border border-zinc-800 p-5 rounded-3xl group shadow-lg flex flex-col justify-between">
                 <div>
-                  <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-4 border border-zinc-800">
+                  <div className="aspect-[3/4] rounded-2xl overflow-hidden mb-4 border border-zinc-800 relative bg-zinc-950">
                     <img 
                       src={person.image} 
                       alt={person.name} 
                       loading="lazy"
                       decoding="async"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover object-[center_top] group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                   <p className="text-[9px] font-black text-teal-400 uppercase tracking-wider mb-1">{person.role}</p>

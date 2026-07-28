@@ -1972,7 +1972,7 @@ const Team = () => {
                     <img 
                       src={person.image}
                       alt={person.name}
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                      className="w-full h-full object-cover object-[center_top] grayscale group-hover:grayscale-0 transition-all duration-700"
                       style={person.zoom ? { transform: `scale(${person.zoom})`, transformOrigin: 'center 20%' } : undefined}
                       referrerPolicy="no-referrer"
                     />
