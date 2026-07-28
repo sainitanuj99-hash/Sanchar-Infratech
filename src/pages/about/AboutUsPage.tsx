@@ -12,7 +12,12 @@ import {
   ArrowLeft, 
   ArrowRight, 
   Sparkles,
-  CheckCircle2
+  CheckCircle2,
+  DraftingCompass,
+  Cpu,
+  Zap,
+  Leaf,
+  Trophy
 } from 'lucide-react';
 
 const NUMBERS = [
@@ -23,14 +28,14 @@ const NUMBERS = [
 ];
 
 const EXPERTISE = [
-  "Architecture & Design",
-  "Urban Master Planning",
-  "PMC & Turnkey Construction",
-  "Structural Engineering",
-  "MEP & Utility Systems",
-  "Astro-Vastu Spatial Planning",
-  "Heritage Conservation",
-  "Environmental & Ecology"
+  { title: "Architecture & Design", icon: DraftingCompass, img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600&auto=format&fit=crop" },
+  { title: "Urban Master Planning", icon: Globe, img: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=600&auto=format&fit=crop" },
+  { title: "PMC & Turnkey Build", icon: Building2, img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=600&auto=format&fit=crop" },
+  { title: "Structural Engineering", icon: Cpu, img: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=600&auto=format&fit=crop" },
+  { title: "MEP & Utility Systems", icon: Zap, img: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600&auto=format&fit=crop" },
+  { title: "Astro-Vastu Planning", icon: Compass, img: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=600&auto=format&fit=crop" },
+  { title: "Heritage Conservation", icon: Trophy, img: "https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=600&auto=format&fit=crop" },
+  { title: "Environmental & Ecology", icon: Leaf, img: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=600&auto=format&fit=crop" }
 ];
 
 const LEADERSHIP = [
@@ -187,16 +192,32 @@ export default function AboutUsPage() {
             })}
           </div>
 
-          {/* Expertise Badges */}
-          <div className="bg-zinc-900/40 border border-zinc-800 p-6 rounded-3xl">
-            <p className="text-center text-[10px] font-black uppercase tracking-[0.3em] text-teal-400 mb-4">Core Domain Capabilities</p>
-            <div className="flex flex-wrap justify-center gap-2.5">
-              {EXPERTISE.map((item) => (
-                <span key={item} className="inline-flex items-center gap-2 bg-zinc-950 border border-zinc-800 text-zinc-200 px-3.5 py-2 rounded-xl text-xs font-semibold">
-                  <CheckCircle2 size={13} className="text-teal-400" />
-                  {item}
-                </span>
-              ))}
+          {/* Expertise Visual Cards with Icons & Images */}
+          <div className="bg-zinc-900/40 border border-zinc-800 p-6 sm:p-8 rounded-[2.5rem]">
+            <p className="text-center text-[10px] font-black uppercase tracking-[0.3em] text-teal-400 mb-6">Core Domain Capabilities</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {EXPERTISE.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div 
+                    key={item.title} 
+                    className="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950 p-4 group hover:border-teal-500/40 transition-all shadow-lg flex flex-col justify-between min-h-[130px]"
+                  >
+                    <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity pointer-events-none">
+                      <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-transparent" />
+                    </div>
+
+                    <div className="relative z-10 w-9 h-9 rounded-xl bg-teal-950/80 border border-teal-800/60 flex items-center justify-center text-teal-400 mb-3 shadow-md">
+                      <Icon size={18} />
+                    </div>
+
+                    <h4 className="relative z-10 text-xs font-bold text-white group-hover:text-teal-300 transition-colors leading-snug">
+                      {item.title}
+                    </h4>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
