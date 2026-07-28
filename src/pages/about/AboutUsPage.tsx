@@ -127,12 +127,13 @@ export default function AboutUsPage() {
 
         {/* SECTION 2: WHO WE ARE - 2 HALF IMAGES SIDE BY SIDE */}
         <div className="mb-16">
-          <div className="text-center max-w-2xl mx-auto mb-8">
-            <span className="text-[9px] font-black uppercase tracking-[0.3em] text-teal-400 bg-teal-950/80 border border-teal-800/60 px-3.5 py-1.5 rounded-full">
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            <span className="text-[9px] font-black uppercase tracking-[0.4em] text-teal-400 bg-teal-950/80 border border-teal-800/60 px-4 py-1.5 rounded-full inline-block mb-3">
               Who We Are
             </span>
-            <h2 className="text-2xl sm:text-4xl font-black text-white mt-3">
-              Multidisciplinary Infratech Leadership
+            <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white leading-tight font-sans">
+              We Are The Architects Of Your Success, <br />
+              <span className="text-teal-400 font-serif italic">Building Your Vision With Precision & Collaboration</span>
             </h2>
           </div>
 
