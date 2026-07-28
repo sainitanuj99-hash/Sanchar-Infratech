@@ -145,17 +145,17 @@ export default function AboutUsPage() {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/25 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/90 backdrop-blur-md border border-teal-500/30 p-4 rounded-2xl flex items-center justify-between shadow-xl">
+              <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/90 backdrop-blur-md border border-teal-500/30 p-4 sm:p-5 rounded-2xl flex items-center justify-between shadow-xl">
                 <div>
-                  <span className="text-[9px] font-black uppercase text-zinc-950 bg-teal-400 tracking-wider px-2.5 py-0.5 rounded-md inline-block mb-1 shadow-md">
-                    Modern Construction
+                  <span className="text-[9px] font-black uppercase text-teal-400 tracking-[0.2em] mb-1 block">
+                    Core Capability
                   </span>
-                  <p className="text-xs sm:text-sm font-extrabold text-white">
-                    Turnkey Civil Engineering & <span className="text-teal-300 italic font-serif text-sm sm:text-base">Site Execution</span>
-                  </p>
+                  <h3 className="text-lg sm:text-2xl font-black text-white group-hover:text-teal-300 transition-colors font-sans tracking-tight">
+                    Modern Construction
+                  </h3>
                 </div>
-                <div className="w-9 h-9 rounded-xl bg-teal-500/20 border border-teal-400/40 flex items-center justify-center text-teal-300">
-                  <Sparkles size={18} className="text-teal-400 animate-pulse" />
+                <div className="w-10 h-10 rounded-2xl bg-teal-500 text-zinc-950 flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:scale-110 transition-transform">
+                  <Sparkles size={20} className="stroke-[2.5]" />
                 </div>
               </div>
             </div>
@@ -168,17 +168,17 @@ export default function AboutUsPage() {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/25 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/90 backdrop-blur-md border border-teal-500/30 p-4 rounded-2xl flex items-center justify-between shadow-xl">
+              <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/90 backdrop-blur-md border border-teal-500/30 p-4 sm:p-5 rounded-2xl flex items-center justify-between shadow-xl">
                 <div>
-                  <span className="text-[9px] font-black uppercase text-zinc-950 bg-teal-400 tracking-wider px-2.5 py-0.5 rounded-md inline-block mb-1 shadow-md">
-                    Modern Architecture
+                  <span className="text-[9px] font-black uppercase text-teal-400 tracking-[0.2em] mb-1 block">
+                    Core Capability
                   </span>
-                  <p className="text-xs sm:text-sm font-extrabold text-white">
-                    Futuristic Glass & <span className="text-teal-300 italic font-serif text-sm sm:text-base">Architectural Design</span>
-                  </p>
+                  <h3 className="text-lg sm:text-2xl font-black text-white group-hover:text-teal-300 transition-colors font-sans tracking-tight">
+                    Modern Architecture
+                  </h3>
                 </div>
-                <div className="w-9 h-9 rounded-xl bg-teal-500/20 border border-teal-400/40 flex items-center justify-center text-teal-300">
-                  <Sparkles size={18} className="text-teal-400 animate-pulse" />
+                <div className="w-10 h-10 rounded-2xl bg-teal-500 text-zinc-950 flex items-center justify-center shadow-lg shadow-teal-500/30 group-hover:scale-110 transition-transform">
+                  <Sparkles size={20} className="stroke-[2.5]" />
                 </div>
               </div>
             </div>
