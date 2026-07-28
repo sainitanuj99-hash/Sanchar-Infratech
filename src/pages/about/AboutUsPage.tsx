@@ -9,99 +9,102 @@ import {
   Target, 
   Compass, 
   ShieldCheck, 
-  Zap, 
   ArrowLeft, 
   ArrowRight, 
-  Calendar, 
-  CheckCircle2, 
   Sparkles,
-  UserCheck,
-  BookOpen,
   Trophy
 } from 'lucide-react';
 
 const STATS = [
   { label: "Years Excellence", value: "25+", icon: Globe },
-  { label: "Projects Completed", value: "250+", icon: Building2 },
-  { label: "Client Satisfaction", value: "98%", icon: Users },
-  { label: "Sq Ft Constructed", value: "12M+", icon: Award }
+  { label: "Landmark Builds", value: "250+", icon: Building2 },
+  { label: "Client Rating", value: "98%", icon: Users },
+  { label: "Constructed", value: "12M+ Sq Ft", icon: Award }
 ];
 
 const TIMELINE = [
   {
     year: "2001",
-    title: "Founding & Incorporation",
-    description: "Established in Jaipur by visionary civil engineers with a mission to bring structural rigor, Astro-Vastu spatial harmony, and absolute transparency to Rajasthan's infrastructure."
+    title: "Founding in Jaipur",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+    short: "Incorporated with a vision for engineering rigor, Astro-Vastu alignment, and transparency."
   },
   {
     year: "2010",
-    title: "Commercial & Healthcare Landmarks",
-    description: "Delivered major state projects including the 300-bedded Pt. Deen Dayal Upadhyay Hospital (₹55 Cr) and Rajasthan Patrika Headquarters in Jaipur."
+    title: "Healthcare & Commercial",
+    image: "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?q=80&w=800&auto=format&fit=crop",
+    short: "Built Pt. Deen Dayal Upadhyay Hospital (₹55 Cr) and Patrika Headquarters."
   },
   {
     year: "2018",
-    title: "Heritage Conservation & Sports Infratech",
-    description: "Chosen for structural restoration of Amber Palace and modern expansion of SMS Stadium sports complex alongside high-rise residential projects like SNG Ozone."
+    title: "Heritage & Sports Facilities",
+    image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=800&auto=format&fit=crop",
+    short: "Restoration of Amber Palace and modern expansion of SMS Stadium sports complex."
   },
   {
     year: "2026+",
-    title: "Smart Cities & Sustainable Future",
-    description: "Pioneering IGBC-certified green building designs, smart automation, carbon-neutral construction, and turnkey PMC operations."
+    title: "Smart Cities & Green Build",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
+    short: "IGBC certified green building standards, automation, and carbon-neutral designs."
   }
 ];
 
 const LEADERSHIP = [
   {
     name: "Er Akhilesh Kumar Mittal",
-    role: "Director",
+    role: "Director • B.Tech, M.Tech",
     image: "https://sancharinfratech-com-431288.hostingersite.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-02-21-at-6.17.51-PM-2-1.png",
-    bio: "Qualified Civil Engineer (B.Tech & M.Tech) and Astro Vastu Planner. Combines engineering precision with Vastu principles, overseeing strategy, auditing, and structural compliance.",
-    tags: ["Civil Engineering", "Astro Vastu", "Corporate Strategy"]
+    short: "Civil Engineer & Astro Vastu Planner overseeing structural compliance and corporate strategy."
   },
   {
     name: "Dr Pushpendra Kumar Mittal",
-    role: "Director",
+    role: "Director • Urban Planner",
     image: "https://sancharinfratech-com-431288.hostingersite.com/wp-content/uploads/2026/06/WhatsApp-Image-2026-02-21-at-6.17.51-PM-1.png",
-    bio: "Distinguished Urban Planner and Economist. Brings macro-level urban planning expertise and economic analysis to steer structural design, master planning, and operations.",
-    tags: ["Urban Planning", "Economic Strategy", "Infrastructure"]
+    short: "Urban Planner and Economist guiding master planning and large-scale infrastructure."
   },
   {
     name: "Shri Manohar Kant",
-    role: "Advisor (Retd. IAS)",
+    role: "Advisor • Retd. IAS",
     image: "https://sancharinfratech-com-431288.hostingersite.com/wp-content/uploads/2026/02/Gemini_Generated_Image_x8zg3x8zg3x8zg3x-1.png",
-    bio: "Retd. IAS officer bringing administrative rigor, public governance experience, and regulatory oversight across all major site workflows and compliance.",
-    tags: ["Governance", "Site Optimization", "Compliance"]
+    short: "Retd. IAS Officer ensuring administrative governance, compliance, and site quality."
   },
   {
     name: "Mr Tanmaya Mittal",
-    role: "Director",
+    role: "Director • Operations",
     image: "https://sancharinfratech-com-431288.hostingersite.com/wp-content/uploads/2026/02/Gemini_Generated_Image_g0roc7g0roc7g0ro-1.png",
-    bio: "Key driver of strategic growth, operational excellence, and modern technology integration, upholding Sanchar's commitment to quality and sustainability.",
-    tags: ["Strategic Growth", "Operations", "Sustainability"]
+    short: "Leading operational growth, technology integration, and sustainable innovation."
   }
 ];
 
-const ACCREDITATIONS = [
-  { title: "ISO 9001:2015", desc: "Quality Management Systems" },
-  { title: "ISO 45001:2018", desc: "Occupational Health & Safety" },
-  { title: "ISO 14001:2015", desc: "Environmental Management" },
-  { title: "IGBC Member", desc: "Green Building Certifications" }
+const GALLERY = [
+  {
+    title: "Pt. Deen Dayal Upadhyay Hospital",
+    tag: "Healthcare Landmark",
+    img: "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    title: "High-Rise Residential Towers",
+    tag: "Luxury Housing",
+    img: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    title: "Heritage Conservation Projects",
+    tag: "Restoration",
+    img: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=800&auto=format&fit=crop"
+  }
 ];
 
 export default function AboutUsPage() {
   return (
     <div className="min-h-screen bg-zinc-950 text-white pt-28 pb-20 relative overflow-hidden">
-      {/* Background Architectural Blueprint Pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(#0d9488_1px,transparent_1px)] [background-size:28px_28px] opacity-[0.1] pointer-events-none" />
+      {/* Blueprint background grid */}
+      <div className="absolute inset-0 bg-[radial-gradient(#0d9488_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.12] pointer-events-none" />
+      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-teal-500/10 rounded-full blur-[140px] pointer-events-none" />
 
-      {/* Floating Glowing Aura Orbs */}
-      <div className="absolute top-1/4 left-1/10 w-96 h-96 bg-teal-500/10 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-1/3 right-1/10 w-[500px] h-[500px] bg-teal-400/5 rounded-full blur-[160px] pointer-events-none" />
-
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Navigation Breadcrumb */}
-        <div className="flex items-center justify-between gap-4 mb-10">
+        <div className="flex items-center justify-between gap-4 mb-8">
           <Link 
             to="/" 
             className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-zinc-400 hover:text-teal-400 transition-colors group cursor-pointer"
@@ -116,157 +119,190 @@ export default function AboutUsPage() {
           </div>
         </div>
 
-        {/* Hero Header Banner */}
+        {/* Hero Section: Text Left + Big Visual Photo Right */}
         <motion.div 
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="bg-zinc-900/60 backdrop-blur-2xl border border-zinc-800/80 p-8 sm:p-14 rounded-[2.5rem] shadow-2xl mb-16 relative overflow-hidden"
+          transition={{ duration: 0.5 }}
+          className="bg-zinc-900/70 border border-zinc-800/80 p-6 sm:p-10 rounded-[2.5rem] shadow-2xl mb-16 relative overflow-hidden"
         >
           <div className="absolute top-0 left-0 right-0 h-[4px] bg-gradient-to-r from-teal-500 via-emerald-400 to-sky-500" />
-          
-          <div className="max-w-3xl">
-            <span className="text-[10px] font-black text-teal-400 uppercase tracking-[0.4em] bg-teal-950/80 border border-teal-800/50 px-4 py-1.5 rounded-full">
-              Sanchar Infratech Pvt. Ltd.
-            </span>
-            <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white mt-6 mb-6 font-sans leading-tight">
-              Pioneering Infrastructure <br />
-              <span className="text-teal-400 font-serif italic">Excellence Since 2001</span>
-            </h1>
-            <p className="text-zinc-300 text-base sm:text-lg leading-relaxed font-light">
-              We are a leading multidisciplinary architecture, engineering, and project management consultancy. 
-              With over 25 years of legacy, we transform visionary concepts into enduring structural masterpieces.
-            </p>
-          </div>
 
-          {/* Key Stat Badges Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 pt-10 border-t border-zinc-800/60">
-            {STATS.map((s) => {
-              const Icon = s.icon;
-              return (
-                <div key={s.label} className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-2xl bg-teal-950/60 border border-teal-800/40 flex items-center justify-center text-teal-400">
-                    <Icon size={22} />
-                  </div>
-                  <div>
-                    <p className="text-2xl font-black text-white tracking-tight">{s.value}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            {/* Left Copy Column */}
+            <div className="lg:col-span-6">
+              <span className="text-[9px] font-black text-teal-400 uppercase tracking-[0.3em] bg-teal-950/80 border border-teal-800/60 px-3.5 py-1.5 rounded-full inline-block mb-4">
+                Sanchar Infratech Pvt. Ltd.
+              </span>
+              <h1 className="text-3xl sm:text-5xl font-black text-white font-sans leading-tight mb-4">
+                Building Excellence <br />
+                <span className="text-teal-400 font-serif italic">Since 2001</span>
+              </h1>
+              <p className="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+                Multidisciplinary architectural, civil engineering, and project management consultancy with 25+ years of structural legacy.
+              </p>
+
+              {/* Quick Stat Grid */}
+              <div className="grid grid-cols-2 gap-4 pt-4 border-t border-zinc-800">
+                {STATS.slice(0, 2).map((s) => (
+                  <div key={s.label} className="bg-zinc-950/60 p-3.5 rounded-2xl border border-zinc-800/60">
+                    <p className="text-2xl font-black text-teal-400">{s.value}</p>
                     <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">{s.label}</p>
                   </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Right Photo Column */}
+            <div className="lg:col-span-6">
+              <div className="relative rounded-3xl overflow-hidden border border-zinc-800 aspect-[4/3] group shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop" 
+                  alt="Sanchar Corporate Building" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/70 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/80 backdrop-blur-md border border-zinc-800 p-3.5 rounded-2xl flex items-center justify-between">
+                  <div>
+                    <p className="text-[9px] font-black uppercase text-teal-400 tracking-wider">Corporate Landmark</p>
+                    <p className="text-xs font-bold text-white">25+ Years of Structural Innovation</p>
+                  </div>
+                  <Sparkles size={16} className="text-teal-400 animate-pulse" />
                 </div>
-              );
-            })}
+              </div>
+            </div>
+
           </div>
         </motion.div>
 
-        {/* Mission, Vision & Core Values Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-zinc-900/40 border border-zinc-800/60 p-8 rounded-3xl hover:border-teal-500/40 transition-all shadow-xl"
-          >
-            <div className="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-6">
-              <Target size={28} />
+        {/* Visual Cards: Mission & Vision */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div className="relative bg-zinc-900/60 border border-zinc-800 p-6 rounded-3xl overflow-hidden group">
+            <div className="w-12 h-12 rounded-2xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 mb-4">
+              <Target size={24} />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">Our Mission</h3>
-            <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed font-light">
-              To redefine urban landscapes through innovative, sustainable, and high-impact infrastructure solutions, 
-              combining technical engineering precision with transparent client partnership.
+            <h3 className="text-lg font-bold text-white mb-2">Our Mission</h3>
+            <p className="text-zinc-400 text-xs leading-relaxed font-normal">
+              Innovative & sustainable infrastructure with absolute engineering precision.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            viewport={{ once: true }}
-            className="bg-zinc-900/40 border border-zinc-800/60 p-8 rounded-3xl hover:border-teal-500/40 transition-all shadow-xl"
-          >
-            <div className="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-6">
-              <Compass size={28} />
+          <div className="relative bg-zinc-900/60 border border-zinc-800 p-6 rounded-3xl overflow-hidden group">
+            <div className="w-12 h-12 rounded-2xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 mb-4">
+              <Compass size={24} />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">Our Vision</h3>
-            <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed font-light">
-              To be the trusted global benchmark for excellence in multidisciplinary architecture, urban planning, 
-              structural engineering, and Astro-Vastu spatial design.
+            <h3 className="text-lg font-bold text-white mb-2">Our Vision</h3>
+            <p className="text-zinc-400 text-xs leading-relaxed font-normal">
+              Global benchmark for multidisciplinary architecture & Astro-Vastu alignment.
             </p>
-          </motion.div>
+          </div>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            viewport={{ once: true }}
-            className="bg-zinc-900/40 border border-zinc-800/60 p-8 rounded-3xl hover:border-teal-500/40 transition-all shadow-xl"
-          >
-            <div className="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-6">
-              <ShieldCheck size={28} />
+          <div className="relative bg-zinc-900/60 border border-zinc-800 p-6 rounded-3xl overflow-hidden group">
+            <div className="w-12 h-12 rounded-2xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 mb-4">
+              <ShieldCheck size={24} />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">Core Pillars</h3>
-            <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed font-light">
-              Zero-compromise structural safety, 24/7 site surveillance transparency, 
-              eco-conscious IGBC green building standards, and Astro-Vastu harmony.
+            <h3 className="text-lg font-bold text-white mb-2">Core Pillars</h3>
+            <p className="text-zinc-400 text-xs leading-relaxed font-normal">
+              Zero-compromise structural safety, 24/7 site surveillance & IGBC green builds.
             </p>
-          </motion.div>
+          </div>
         </div>
 
-        {/* 25-Year Milestone Timeline Section */}
-        <div className="mb-24">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-teal-400 bg-teal-950/60 border border-teal-800/40 px-4 py-1.5 rounded-full">
-              Quarter-Century Journey
+        {/* Visual Timeline Section with Image Cards */}
+        <div className="mb-20">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-[9px] font-black uppercase tracking-[0.3em] text-teal-400 bg-teal-950/80 border border-teal-800/60 px-3.5 py-1.5 rounded-full">
+              Key Milestones
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mt-4 font-sans">
-              Historical Growth & Milestones
+            <h2 className="text-2xl sm:text-4xl font-black text-white mt-3">
+              Our 25-Year Journey
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {TIMELINE.map((item, idx) => (
               <motion.div
                 key={item.year}
-                initial={{ opacity: 0, y: 25 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: idx * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-zinc-900/50 border border-zinc-800/80 p-7 rounded-3xl hover:border-teal-500/40 transition-all relative flex flex-col justify-between"
+                className="bg-zinc-900/70 border border-zinc-800 rounded-3xl overflow-hidden group hover:border-teal-500/40 transition-all flex flex-col justify-between shadow-lg"
               >
-                <div>
-                  <div className="w-12 h-12 rounded-2xl bg-teal-500 text-zinc-950 font-black flex items-center justify-center text-sm tracking-wider mb-6 shadow-lg shadow-teal-500/20">
+                <div className="h-44 overflow-hidden relative">
+                  <img 
+                    src={item.image} 
+                    alt={item.title} 
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent" />
+                  <span className="absolute top-3 left-3 bg-teal-500 text-zinc-950 font-black text-xs px-3 py-1 rounded-xl shadow-md">
                     {item.year}
+                  </span>
+                </div>
+                <div className="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 className="text-sm font-extrabold text-white mb-1.5">{item.title}</h4>
+                    <p className="text-xs text-zinc-400 leading-relaxed">{item.short}</p>
                   </div>
-                  <h4 className="text-base font-bold text-white mb-3">{item.title}</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed font-light">{item.description}</p>
                 </div>
               </motion.div>
             ))}
           </div>
         </div>
 
-        {/* Leadership & Directors Board Section */}
-        <div className="mb-24">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-teal-400 bg-teal-950/60 border border-teal-800/40 px-4 py-1.5 rounded-full">
-              Leadership & Guidance
+        {/* Visual Project Showcase Showcase Bar */}
+        <div className="mb-20">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-[9px] font-black uppercase tracking-[0.3em] text-teal-400 bg-teal-950/80 border border-teal-800/60 px-3.5 py-1.5 rounded-full">
+              Portfolio Snapshot
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white mt-4 font-sans">
-              Meet Our Board of Directors
+            <h2 className="text-2xl sm:text-4xl font-black text-white mt-3">
+              Delivered Architectural Landmarks
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {LEADERSHIP.map((person, idx) => (
-              <motion.div
-                key={person.name}
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-zinc-900/40 border border-zinc-800/60 p-6 rounded-3xl hover:border-teal-500/40 transition-all flex flex-col justify-between overflow-hidden group shadow-xl"
-              >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {GALLERY.map((g) => (
+              <div key={g.title} className="relative rounded-3xl overflow-hidden border border-zinc-800 aspect-[16/10] group shadow-xl">
+                <img 
+                  src={g.img} 
+                  alt={g.title} 
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/30 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <span className="text-[9px] font-bold uppercase tracking-wider text-teal-400 bg-teal-950/90 border border-teal-800/60 px-2.5 py-1 rounded-md inline-block mb-1">
+                    {g.tag}
+                  </span>
+                  <h4 className="text-sm font-bold text-white">{g.title}</h4>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Leadership Showcase Grid */}
+        <div className="mb-20">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="text-[9px] font-black uppercase tracking-[0.3em] text-teal-400 bg-teal-950/80 border border-teal-800/60 px-3.5 py-1.5 rounded-full">
+              Leadership
+            </span>
+            <h2 className="text-2xl sm:text-4xl font-black text-white mt-3">
+              Board of Directors
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {LEADERSHIP.map((person) => (
+              <div key={person.name} className="bg-zinc-900/60 border border-zinc-800 p-4 rounded-3xl group shadow-lg flex flex-col justify-between">
                 <div>
-                  <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 border border-zinc-800">
+                  <div className="aspect-[4/3] rounded-2xl overflow-hidden mb-4 border border-zinc-800">
                     <img 
                       src={person.image} 
                       alt={person.name} 
@@ -275,61 +311,36 @@ export default function AboutUsPage() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  <span className="text-[9px] font-black uppercase text-teal-400 tracking-wider bg-teal-950/80 px-2.5 py-1 rounded-md border border-teal-800/40">
-                    {person.role}
-                  </span>
-                  <h3 className="text-lg font-bold text-white mt-3 mb-2">{person.name}</h3>
-                  <p className="text-xs text-zinc-400 leading-relaxed font-light mb-4">{person.bio}</p>
+                  <p className="text-[9px] font-black text-teal-400 uppercase tracking-wider mb-1">{person.role}</p>
+                  <h3 className="text-sm font-bold text-white mb-2">{person.name}</h3>
+                  <p className="text-xs text-zinc-400 leading-snug font-normal">{person.short}</p>
                 </div>
-
-                <div className="flex flex-wrap gap-1.5 pt-4 border-t border-zinc-800/60">
-                  {person.tags.map((t) => (
-                    <span key={t} className="text-[8px] font-bold text-zinc-400 uppercase bg-zinc-800/60 px-2 py-0.5 rounded-md">
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-
-        {/* Accreditations & Quality Standards */}
-        <div className="bg-zinc-900/60 border border-zinc-800 p-8 sm:p-12 rounded-[2.5rem] shadow-2xl mb-16 text-center">
-          <h3 className="text-xl sm:text-2xl font-bold text-white mb-8 font-sans">
-            Recognized Quality Standards & ISO Accreditations
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {ACCREDITATIONS.map((acc) => (
-              <div key={acc.title} className="p-4 rounded-2xl bg-zinc-950/60 border border-zinc-800/60">
-                <p className="text-sm font-black text-teal-400 uppercase tracking-widest mb-1">{acc.title}</p>
-                <p className="text-[10px] text-zinc-400 uppercase font-bold tracking-wider">{acc.desc}</p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Bottom CTA Banner */}
-        <div className="text-center bg-gradient-to-r from-teal-950 via-zinc-900 to-teal-950 border border-teal-800/40 p-10 sm:p-16 rounded-[2.5rem] shadow-2xl">
-          <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
-            Ready to Build Your Landmark Project?
+        {/* CTA Banner */}
+        <div className="text-center bg-gradient-to-r from-teal-950 via-zinc-900 to-teal-950 border border-teal-800/40 p-8 sm:p-12 rounded-[2.5rem] shadow-2xl">
+          <h2 className="text-2xl sm:text-3xl font-black text-white mb-3">
+            Partner With Sanchar Infratech
           </h2>
-          <p className="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto mb-8 font-light">
-            Partner with Sanchar Infratech for turnkey civil engineering, Vastu spatial planning, and structural excellence.
+          <p className="text-zinc-400 text-xs sm:text-sm max-w-md mx-auto mb-6">
+            Turnkey civil engineering, Vastu spatial planning, and structural excellence.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-3">
             <Link 
               to="/#estimator" 
-              className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-400 text-zinc-950 px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-xl shadow-teal-500/20"
+              className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-400 text-zinc-950 px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg"
             >
               Get Instant Estimate
               <ArrowRight size={14} />
             </Link>
             <a 
               href="/#connect" 
-              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-6 py-3 rounded-full font-bold text-xs uppercase tracking-widest transition-all"
             >
-              Contact Our Directors
+              Contact Directors
             </a>
           </div>
         </div>
