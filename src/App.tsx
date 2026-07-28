@@ -61,6 +61,7 @@ import { Navbar } from './components/Navbar';
 import { BrowserRouter, Routes, Route, useLocation, Link } from 'react-router-dom';
 
 // Lazy-loaded Subpage & Heavy Component Imports
+const AboutUsPage = lazy(() => import('./pages/about/AboutUsPage'));
 const OurStory = lazy(() => import('./pages/about/OurStory'));
 const WhyChooseUs = lazy(() => import('./pages/about/WhyChooseUs'));
 const Accreditations = lazy(() => import('./pages/about/Accreditations'));
@@ -2325,7 +2326,8 @@ export default function App() {
             } />
 
             {/* Subpages Route Mappings */}
-            <Route path="/about/our-story" element={<OurStory />} />
+            <Route path="/about" element={<AboutUsPage />} />
+            <Route path="/about/our-story" element={<AboutUsPage />} />
             <Route path="/about/why-choose-us" element={<WhyChooseUs />} />
             <Route path="/about/accreditations" element={<Accreditations />} />
             
