@@ -1637,7 +1637,7 @@ const ValuesSection = () => {
               </p>
             </div>
             <div className="absolute inset-0 opacity-30 transition-transform duration-700 group-hover:scale-110 pointer-events-none">
-               <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2070&auto=format&fit=crop" alt="Innovation First Engineering Tech" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+               <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Futuristic Architectural Skyscraper" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
             <div className="relative z-10 pt-12">
                <div className="flex gap-2">
