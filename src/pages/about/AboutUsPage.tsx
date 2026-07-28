@@ -68,9 +68,23 @@ const LEADERSHIP = [
 export default function AboutUsPage() {
   return (
     <div className="min-h-screen bg-zinc-950 text-white pt-28 pb-20 relative overflow-hidden">
-      {/* Blueprint Background Grid */}
-      <div className="absolute inset-0 bg-[radial-gradient(#0d9488_1px,transparent_1px)] [background-size:24px_24px] opacity-[0.12] pointer-events-none" />
-      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-teal-500/10 rounded-full blur-[140px] pointer-events-none" />
+      {/* High-Resolution Civil Engineering & Construction Background Photo Overlay */}
+      <div className="fixed inset-0 pointer-events-none opacity-[0.14] z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2000&auto=format&fit=crop" 
+          alt="Civil Engineering Background" 
+          className="w-full h-full object-cover filter contrast-125 brightness-75 scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950 via-zinc-950/85 to-zinc-950" />
+      </div>
+
+      {/* Architectural CAD Blueprint Grid Overlay */}
+      <div className="fixed inset-0 bg-[linear-gradient(to_right,rgba(13,148,136,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(13,148,136,0.08)_1px,transparent_1px)] bg-[size:32px_32px] sm:bg-[size:48px_48px] pointer-events-none z-0" />
+
+      {/* Floating Ambient Glowing Lighting Blobs */}
+      <div className="fixed top-1/4 -left-32 w-[500px] h-[500px] bg-teal-500/15 rounded-full blur-[160px] pointer-events-none z-0" />
+      <div className="fixed bottom-1/4 -right-32 w-[550px] h-[550px] bg-sky-500/10 rounded-full blur-[180px] pointer-events-none z-0" />
+      <div className="fixed top-2/3 left-1/3 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[150px] pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
