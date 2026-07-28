@@ -155,19 +155,25 @@ export default function AboutUsPage() {
             </div>
 
             {/* Half Image 2: Modern Architecture */}
-            <div className="relative rounded-3xl overflow-hidden border border-zinc-800 aspect-[16/10] sm:aspect-[4/3] group shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden border border-teal-500/40 bg-zinc-950 aspect-[16/10] sm:aspect-[4/3] group shadow-2xl hover:border-teal-400 transition-colors">
               <img 
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" 
                 alt="Modern Architecture" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/85 via-zinc-950/20 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/85 backdrop-blur-md border border-zinc-800 p-4 rounded-2xl flex items-center justify-between">
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/25 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/90 backdrop-blur-md border border-teal-500/30 p-4 rounded-2xl flex items-center justify-between shadow-xl">
                 <div>
-                  <p className="text-[9px] font-black uppercase text-teal-400 tracking-wider">Modern Architecture</p>
-                  <p className="text-xs sm:text-sm font-bold text-white">Futuristic Glass & Structural Blueprint Design</p>
+                  <span className="text-[9px] font-black uppercase text-zinc-950 bg-teal-400 tracking-wider px-2.5 py-0.5 rounded-md inline-block mb-1 shadow-md">
+                    Modern Architecture
+                  </span>
+                  <p className="text-xs sm:text-sm font-extrabold text-white">
+                    Futuristic Glass & <span className="text-teal-300 italic font-serif text-sm sm:text-base">Architectural Design</span>
+                  </p>
                 </div>
-                <Sparkles size={16} className="text-teal-400" />
+                <div className="w-9 h-9 rounded-xl bg-teal-500/20 border border-teal-400/40 flex items-center justify-center text-teal-300">
+                  <Sparkles size={18} className="text-teal-400 animate-pulse" />
+                </div>
               </div>
             </div>
           </div>
