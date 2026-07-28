@@ -1636,8 +1636,8 @@ const ValuesSection = () => {
                 Integrating cutting-edge technology and materials in every build to ensure longevity and efficiency.
               </p>
             </div>
-            <div className="absolute inset-0 opacity-20 transition-transform duration-700 group-hover:scale-110 pointer-events-none">
-               <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop" alt="Innovation" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+            <div className="absolute inset-0 opacity-30 transition-transform duration-700 group-hover:scale-110 pointer-events-none">
+               <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2070&auto=format&fit=crop" alt="Innovation First Engineering Tech" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
             <div className="relative z-10 pt-12">
                <div className="flex gap-2">
