@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import { SEOHead } from '../../components/SEOHead';
 import { 
   Building2, 
   Globe, 
@@ -66,8 +67,33 @@ const LEADERSHIP = [
 ];
 
 export default function AboutUsPage() {
+  const aboutBreadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sancharinfratech.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "About Us",
+        "item": "https://sancharinfratech.com/about"
+      }
+    ]
+  };
+
   return (
-    <div className="min-h-screen bg-zinc-950 text-white pt-28 pb-20 relative overflow-hidden">
+    <main role="main" className="min-h-screen bg-zinc-950 text-white pt-28 pb-20 relative overflow-hidden">
+      <SEOHead 
+        title="About Us | Sanchar Infratech Pvt Ltd — 25 Years Engineering Legacy"
+        description="Discover Sanchar Infratech's 25-year legacy in Jaipur, Rajasthan. Multidisciplinary architecture, civil engineering, PMC consultancy, and Board of Directors."
+        canonicalUrl="https://sancharinfratech.com/about"
+        jsonLd={aboutBreadcrumbJsonLd}
+      />
       {/* High-Resolution Civil Engineering & Construction Background Photo Overlay */}
       <div className="fixed inset-0 pointer-events-none opacity-[0.14] z-0">
         <img 
@@ -359,6 +385,6 @@ export default function AboutUsPage() {
         </div>
 
       </div>
-    </div>
+    </main>
   );
 }

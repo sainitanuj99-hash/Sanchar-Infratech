@@ -58,6 +58,7 @@ import {
   isMockFirebase
 } from './firebase';
 import { Navbar } from './components/Navbar';
+import { SEOHead } from './components/SEOHead';
 import { BrowserRouter, Routes, Route, useLocation, Link } from 'react-router-dom';
 
 // Lazy-loaded Subpage & Heavy Component Imports
@@ -2305,7 +2306,13 @@ export default function App() {
           <Routes>
             {/* Main Landing Page Route */}
             <Route path="/" element={
-              <>
+              <main role="main">
+                <SEOHead 
+                  title="Sanchar Infratech Pvt Ltd | Civil Engineering & Architectural Design Jaipur"
+                  description="Sanchar Infratech Pvt Ltd is a premier civil engineering, turnkey construction, and multidisciplinary architectural consultancy in Jaipur, Rajasthan with 25+ years of excellence."
+                  canonicalUrl="https://sancharinfratech.com/"
+                  ogImage="https://sancharinfratech.com/civil_construction_dusk.jpg"
+                />
                 <Hero />
                 <ServicesShowcase />
                 <BioSection />
@@ -2322,7 +2329,7 @@ export default function App() {
                 <Team />
                 <Connect user={user} showToast={showToast} />
                 <VastuPopup user={user} showToast={showToast} />
-              </>
+              </main>
             } />
 
             {/* Subpages Route Mappings */}
@@ -2378,11 +2385,11 @@ export default function App() {
           </AnimatePresence>
         </div>
         
-        <footer className="py-12 bg-white border-t border-zinc-100">
+        <footer role="contentinfo" className="py-12 bg-white border-t border-zinc-100">
           <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-2xl font-black tracking-tighter text-teal-600">SANCHAR.</div>
             <p className="text-zinc-400 text-[10px] font-bold tracking-widest uppercase text-center md:text-left opacity-60">
-              © 2024 Sanchar Infratech Pvt Ltd. All Rights Reserved.
+              © 2026 Sanchar Infratech Pvt Ltd. All Rights Reserved.
             </p>
             <div className="flex gap-8">
               {['Instagram', 'LinkedIn', 'X'].map(social => (

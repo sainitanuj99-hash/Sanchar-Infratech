@@ -1,0 +1,33 @@
+# Robots.txt for Sanchar Infratech Pvt Ltd
+# https://sancharinfratech.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*.json$
+
+# Explicit Allow Rules for AI & LLM Search Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap & LLM Knowledge References
+Sitemap: https://sancharinfratech.com/sitemap.xml
+LLMs-Text: https://sancharinfratech.com/llms.txt

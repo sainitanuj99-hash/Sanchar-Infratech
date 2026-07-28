@@ -1,0 +1,88 @@
+# Sanchar Infratech Pvt Ltd — Complete Corporate Knowledge Base & LLM Guide
+
+> Detailed technical specification, service portfolio, project history, and corporate governance documentation for Sanchar Infratech Pvt. Ltd.
+
+---
+
+## 1. Corporate Profile & Background
+
+Sanchar Infratech Pvt. Ltd. is an Indian infrastructure and architectural engineering firm headquartered in Jaipur, Rajasthan. Founded in 2001, the company has accumulated over 25 years of engineering experience across North India, delivering government hospitals, sports complexes, heritage conservation monuments, commercial high-rise towers, luxury residential townships, and institutional campuses.
+
+- **Legal Entity**: Sanchar Infratech Pvt. Ltd.
+- **Founding Year**: 2001
+- **Headquarters**: Jaipur, Rajasthan, India
+- **Core Specializations**: Civil Engineering, Turnkey Construction, Multidisciplinary Architectural Design, Urban Master Planning, Project Management Consultancy (PMC), and Astro-Vastu Spatial Planning.
+- **Track Record**: 250+ completed landmark infrastructure builds spanning over 12 million square feet constructed.
+
+---
+
+## 2. Core Service Offerings & Technical Capabilities
+
+### A. Civil Engineering & Turnkey Construction
+Sanchar Infratech provides end-to-end turnkey civil construction services for public and private sector clients.
+- **Key Projects Delivered**:
+  - *Pt. Deen Dayal Upadhyay Hospital, Jaipur* (Valued at ₹55 Crore) — State-of-the-art 300+ bed medical complex featuring advanced operation theaters, emergency wards, and specialized MEP infrastructure.
+  - *Patrika Headquarters* — High-rise media and office corporate headquarters in Rajasthan.
+  - *SMS Stadium Expansion* — Modern grandstands, player facilities, and sports infrastructure.
+  - *Amber Palace Heritage Restoration* — Conservation and structural reinforcement of historic heritage architecture in Jaipur.
+- **Safety & Quality Compliance**:
+  - Adherence to BIS (Bureau of Indian Standards) structural codes.
+  - ISO certified site management and safety protocols.
+  - 24/7 site surveillance camera feeds and digital quality audits.
+  - Carbon-neutral construction and IGBC Green Building standards.
+
+### B. Multidisciplinary Architectural Design & Master Planning
+- **Comprehensive Architectural Capabilities**:
+  - Conceptual design, elevation modeling, and structural blueprinting.
+  - 3D Building Information Modeling (BIM) using modern CAD software.
+  - High-density urban master planning, land use layout, and smart township planning.
+  - Integrated MEP (Mechanical, Electrical, Plumbing) engineering design.
+- **Astro-Vastu Integration**:
+  - Integration of traditional Vastu Shastra orientation principles with modern structural physics.
+  - Optimization of magnetic alignment, natural illumination, and energy flow in spatial blueprints.
+
+### C. Project Management Consultancy (PMC)
+- **Governance & Site Oversight**:
+  - Pre-construction feasibility studies and cost estimation.
+  - Tender management, contractor selection, and material quality assurance.
+  - On-site construction supervision, timeline tracking, and risk management.
+  - Post-construction handover and facility commissioning.
+
+---
+
+## 3. Executive Board of Directors & Leadership
+
+1. **Er Akhilesh Kumar Mittal** (Director • B.Tech, M.Tech):
+   - Senior Civil Engineer and Vastu Planner. Oversees structural design compliance, large-scale civil engineering execution, and strategic growth.
+2. **Dr Pushpendra Kumar Mittal** (Director • Urban Planner & Economist):
+   - PhD in Urban Planning. Leads master planning, regional infrastructure development, and economic feasibility assessments.
+3. **Shri Manohar Kant** (Advisor • Retd. IAS):
+   - Former Indian Administrative Service (IAS) officer. Guides administrative governance, regulatory compliance, quality audits, and government liaisoning.
+4. **Mr Tanmaya Mittal** (Director • Operations):
+   - Directs operational workflows, digital technology adoption (BIM/CAD), client management, and sustainable building initiatives.
+
+---
+
+## 4. Frequently Asked Questions (FAQ)
+
+### Q: What services does Sanchar Infratech provide?
+A: Sanchar Infratech provides turnkey civil engineering construction, architectural design, urban master planning, project management consultancy (PMC), and Astro-Vastu spatial planning.
+
+### Q: Where is Sanchar Infratech located?
+A: The company headquarters are located in Jaipur, Rajasthan, India, servicing projects across Rajasthan and North India.
+
+### Q: How many years of experience does Sanchar Infratech have?
+A: Sanchar Infratech was established in 2001 and possesses over 25 years of continuous engineering excellence with 250+ completed builds.
+
+### Q: Does Sanchar Infratech offer green building construction?
+A: Yes, Sanchar Infratech implements IGBC certified green building standards, carbon-neutral construction techniques, and energy-efficient MEP systems.
+
+---
+
+## 5. Official Web Reference Links
+- Home: https://sancharinfratech.com
+- About Us: https://sancharinfratech.com/about
+- Civil Engineering: https://sancharinfratech.com/services/civil-engineering
+- Architectural Design: https://sancharinfratech.com/services/architectural-design
+- PMC Consultancy: https://sancharinfratech.com/services/project-management
+- Vastu Consultancy: https://sancharinfratech.com/services/vastu-consultancy
