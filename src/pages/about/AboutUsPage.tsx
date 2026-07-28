@@ -26,25 +26,25 @@ const TIMELINE = [
   {
     year: "2001",
     title: "Founding in Jaipur",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=800&auto=format&fit=crop",
     short: "Incorporated with a vision for engineering rigor, Astro-Vastu alignment, and transparency."
   },
   {
     year: "2010",
     title: "Healthcare & Commercial",
-    image: "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop",
     short: "Built Pt. Deen Dayal Upadhyay Hospital (₹55 Cr) and Patrika Headquarters."
   },
   {
     year: "2018",
     title: "Heritage & Sports Facilities",
-    image: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=800&auto=format&fit=crop",
     short: "Restoration of Amber Palace and modern expansion of SMS Stadium sports complex."
   },
   {
     year: "2026+",
     title: "Smart Cities & Green Build",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=800&auto=format&fit=crop",
     short: "IGBC certified green building standards, automation, and carbon-neutral designs."
   }
 ];
@@ -80,17 +80,17 @@ const GALLERY = [
   {
     title: "Pt. Deen Dayal Upadhyay Hospital",
     tag: "Healthcare Landmark",
-    img: "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?q=80&w=800&auto=format&fit=crop"
+    img: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "High-Rise Residential Towers",
     tag: "Luxury Housing",
-    img: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop"
+    img: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Heritage Conservation Projects",
-    tag: "Restoration",
-    img: "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=800&auto=format&fit=crop"
+    tag: "Jaipur Restoration",
+    img: "https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=800&auto=format&fit=crop"
   }
 ];
 
@@ -158,7 +158,7 @@ export default function AboutUsPage() {
             <div className="lg:col-span-6">
               <div className="relative rounded-3xl overflow-hidden border border-zinc-800 aspect-[4/3] group shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop" 
+                  src="https://images.unsplash.com/photo-1596176530529-78163a4f7af2?q=80&w=1200&auto=format&fit=crop" 
                   alt="Sanchar Corporate Building" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
