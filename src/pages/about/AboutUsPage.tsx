@@ -123,35 +123,35 @@ export default function AboutUsPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
-            {/* Half Image 1 */}
+            {/* Half Image 1: Modern Construction */}
             <div className="relative rounded-3xl overflow-hidden border border-zinc-800 aspect-[16/10] sm:aspect-[4/3] group shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1596176530529-78163a4f7af2?q=80&w=1200&auto=format&fit=crop" 
-                alt="Modern Corporate Infrastructure" 
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1200&auto=format&fit=crop" 
+                alt="Modern Construction" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-zinc-950/20 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/80 backdrop-blur-md border border-zinc-800 p-4 rounded-2xl flex items-center justify-between">
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/85 via-zinc-950/20 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/85 backdrop-blur-md border border-zinc-800 p-4 rounded-2xl flex items-center justify-between">
                 <div>
-                  <p className="text-[9px] font-black uppercase text-teal-400 tracking-wider">Commercial & High-Rise</p>
-                  <p className="text-xs font-bold text-white">Modern Civil Engineering</p>
+                  <p className="text-[9px] font-black uppercase text-teal-400 tracking-wider">Modern Construction</p>
+                  <p className="text-xs sm:text-sm font-bold text-white">Turnkey Civil Engineering & Infrastructure</p>
                 </div>
                 <Sparkles size={16} className="text-teal-400" />
               </div>
             </div>
 
-            {/* Half Image 2 */}
+            {/* Half Image 2: Modern Architecture */}
             <div className="relative rounded-3xl overflow-hidden border border-zinc-800 aspect-[16/10] sm:aspect-[4/3] group shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1599661046289-e31897846e41?q=80&w=1200&auto=format&fit=crop" 
-                alt="Heritage Conservation Jaipur" 
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" 
+                alt="Modern Architecture" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-zinc-950/20 to-transparent" />
-              <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/80 backdrop-blur-md border border-zinc-800 p-4 rounded-2xl flex items-center justify-between">
+              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/85 via-zinc-950/20 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 bg-zinc-950/85 backdrop-blur-md border border-zinc-800 p-4 rounded-2xl flex items-center justify-between">
                 <div>
-                  <p className="text-[9px] font-black uppercase text-teal-400 tracking-wider">Heritage & Restoration</p>
-                  <p className="text-xs font-bold text-white">Amber Palace Conservation</p>
+                  <p className="text-[9px] font-black uppercase text-teal-400 tracking-wider">Modern Architecture</p>
+                  <p className="text-xs sm:text-sm font-bold text-white">Futuristic Glass & Structural Blueprint Design</p>
                 </div>
                 <Sparkles size={16} className="text-teal-400" />
               </div>
