@@ -44,7 +44,7 @@ const TIMELINE = [
   {
     year: "2026+",
     title: "Smart Cities & Green Build",
-    image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop",
     short: "IGBC certified green building standards, automation, and carbon-neutral designs."
   }
 ];
@@ -85,7 +85,7 @@ const GALLERY = [
   {
     title: "High-Rise Residential Towers",
     tag: "Luxury Housing",
-    img: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=800&auto=format&fit=crop"
+    img: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Heritage Conservation Projects",
