@@ -193,28 +193,43 @@ export default function AboutUsPage() {
           </div>
 
           {/* Expertise Visual Cards with Icons & Images */}
-          <div className="bg-zinc-900/40 border border-zinc-800 p-6 sm:p-8 rounded-[2.5rem]">
-            <p className="text-center text-[10px] font-black uppercase tracking-[0.3em] text-teal-400 mb-6">Core Domain Capabilities</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="bg-zinc-900/60 border border-zinc-800 p-6 sm:p-10 rounded-[2.5rem] relative overflow-hidden shadow-2xl">
+            <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-teal-500 via-emerald-400 to-sky-500" />
+            <p className="text-center text-[10px] font-black uppercase tracking-[0.4em] text-teal-400 bg-teal-950/80 border border-teal-800/60 px-4 py-1.5 rounded-full w-fit mx-auto mb-8">
+              Core Domain Capabilities
+            </p>
+
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {EXPERTISE.map((item) => {
                 const Icon = item.icon;
                 return (
                   <div 
                     key={item.title} 
-                    className="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950 p-4 group hover:border-teal-500/40 transition-all shadow-lg flex flex-col justify-between min-h-[130px]"
+                    className="relative rounded-3xl overflow-hidden border border-teal-500/30 bg-zinc-950 p-5 sm:p-6 group hover:border-teal-400 hover:shadow-[0_10px_35px_-5px_rgba(13,148,136,0.3)] transition-all duration-500 flex flex-col justify-between min-h-[160px] sm:min-h-[180px] cursor-pointer"
                   >
-                    <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity pointer-events-none">
+                    {/* Background Image Thumbnail with Gradient overlay */}
+                    <div className="absolute inset-0 opacity-40 group-hover:opacity-65 group-hover:scale-105 transition-all duration-700 pointer-events-none">
                       <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/70 to-zinc-950/30" />
                     </div>
 
-                    <div className="relative z-10 w-9 h-9 rounded-xl bg-teal-950/80 border border-teal-800/60 flex items-center justify-center text-teal-400 mb-3 shadow-md">
-                      <Icon size={18} />
+                    {/* Top Row: Glowing Icon Badge */}
+                    <div className="relative z-10 flex items-center justify-between">
+                      <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-teal-500 text-zinc-950 flex items-center justify-center font-black shadow-lg shadow-teal-500/30 group-hover:scale-110 transition-transform duration-300">
+                        <Icon size={22} className="stroke-[2.5]" />
+                      </div>
+                      <span className="w-2 h-2 rounded-full bg-teal-400 animate-ping opacity-75" />
                     </div>
 
-                    <h4 className="relative z-10 text-xs font-bold text-white group-hover:text-teal-300 transition-colors leading-snug">
-                      {item.title}
-                    </h4>
+                    {/* Title */}
+                    <div className="relative z-10 pt-4">
+                      <h4 className="text-sm sm:text-base font-black text-white group-hover:text-teal-300 transition-colors leading-snug">
+                        {item.title}
+                      </h4>
+                      <p className="text-[9px] font-bold text-teal-400/90 uppercase tracking-wider mt-1 flex items-center gap-1">
+                        Sanchar Expertise <ArrowRight size={10} className="group-hover:translate-x-1 transition-transform" />
+                      </p>
+                    </div>
                   </div>
                 );
               })}
