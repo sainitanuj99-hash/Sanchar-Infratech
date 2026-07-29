@@ -93,57 +93,83 @@
   </head>
   <body>
     <div id="root">
-      <!-- Static Pre-rendered Semantic HTML Shell for AI & Search Crawlers (Hydrated by React on load) -->
-      <header role="banner" style="display: none;">
+      <!-- Static Pre-rendered Semantic HTML Shell for AI Crawlers & Search Bots (Hydrated by React) -->
+      <header role="banner" className="site-header">
         <nav role="navigation" aria-label="Main Navigation">
-          <a href="/">Home</a>
-          <a href="/about">About Us</a>
-          <a href="/#services">Services</a>
-          <a href="/#portfolio">Portfolio</a>
-          <a href="/#estimator">Cost Estimator</a>
-          <a href="/#connect">Contact</a>
+          <a href="/">Home</a> | 
+          <a href="/about">About Us</a> | 
+          <a href="/#services">Services</a> | 
+          <a href="/#portfolio">Portfolio</a> | 
+          <a href="/#estimator">Cost Estimator</a> | 
+          <a href="/#connect">Contact Us</a>
         </nav>
       </header>
 
-      <main role="main" style="display: none;">
+      <main role="main">
         <article>
-          <h1>Sanchar Infratech Pvt Ltd - 25+ Years of Engineering Excellence</h1>
-          <p>Sanchar Infratech Pvt Ltd is a premier multidisciplinary architecture, civil engineering, and project management consultancy headquartered in Jaipur, Rajasthan. Operating since 2001, we have delivered 250+ landmark projects spanning 12M+ square feet.</p>
-          
-          <section>
-            <h2>Core Infrastructure & Architectural Services</h2>
-            <article>
-              <h3>Civil Engineering & Turnkey Construction</h3>
-              <p>Turnkey civil construction for commercial complexes, healthcare facilities (Pt. Deen Dayal Upadhyay Hospital - ₹55 Cr), sports grandstands (SMS Stadium expansion), and luxury residential towers.</p>
+          <header>
+            <h1>Sanchar Infratech Pvt Ltd - 25+ Years of Engineering & Architectural Excellence</h1>
+            <p>Sanchar Infratech Pvt Ltd is a premier multidisciplinary civil engineering, turnkey construction, and architectural design consultancy headquartered in Jaipur, Rajasthan, India. Established in 2001, we have delivered over 250 landmark projects spanning more than 12 million square feet.</p>
+          </header>
+
+          <section id="about-overview">
+            <h2>Who We Are - Multidisciplinary Infratech Leadership</h2>
+            <p>We are the architects of your success, building your vision with absolute precision and collaboration. From high-rise commercial towers and hospital infrastructure to Astro-Vastu compliant luxury residences, Sanchar Infratech combines modern civil engineering physics with sustainable design practices.</p>
+          </section>
+
+          <section id="core-services">
+            <h2>Core Engineering & Architectural Services</h2>
+            
+            <article className="service-card">
+              <h3>1. Civil Engineering & Turnkey Construction</h3>
+              <p>End-to-end turnkey construction of commercial complexes, high-rise residential towers, sports grandstands (SMS Stadium expansion), and healthcare facilities (Pt. Deen Dayal Upadhyay Hospital - Rs 55 Cr). Adhering to zero-compromise safety protocols, 24/7 site surveillance, and IGBC green building standards.</p>
             </article>
-            <article>
-              <h3>Multidisciplinary Architectural Design</h3>
-              <p>BIM 3D modeling, urban master planning, modern elevation architecture, structural design, and interior spatial layout.</p>
+
+            <article className="service-card">
+              <h3>2. Multidisciplinary Architectural Design</h3>
+              <p>Cutting-edge 3D BIM modeling, facade engineering, structural blueprinting, elevation design, and high-density urban master planning.</p>
             </article>
-            <article>
-              <h3>Project Management Consultancy (PMC)</h3>
-              <p>Full lifecycle construction management, cost estimation, 24/7 site surveillance, quality audits, and regulatory compliance.</p>
+
+            <article className="service-card">
+              <h3>3. Project Management Consultancy (PMC)</h3>
+              <p>Full lifecycle construction management, cost estimation, material quality control audits, regulatory compliance, and contractor supervision.</p>
             </article>
-            <article>
-              <h3>Astro-Vastu Spatial Consultancy</h3>
-              <p>Scientific Vastu alignment integrated with modern structural engineering physics for balanced spatial planning.</p>
+
+            <article className="service-card">
+              <h3>4. Expert Astro-Vastu Spatial Consultancy</h3>
+              <p>Scientific Vastu spatial orientation and magnetic alignment integrated into modern structural blueprints for balanced spatial energy.</p>
             </article>
           </section>
 
-          <section>
-            <h2>Board of Directors & Leadership</h2>
+          <section id="leadership">
+            <h2>Board of Directors & Executive Leadership</h2>
             <ul>
-              <li><strong>Er Akhilesh Kumar Mittal</strong> - Director (B.Tech, M.Tech): Civil Engineer & Astro Vastu Planner.</li>
-              <li><strong>Dr Pushpendra Kumar Mittal</strong> - Director: Urban Planner & Economist.</li>
-              <li><strong>Shri Manohar Kant</strong> - Advisor: Retd. IAS Officer.</li>
-              <li><strong>Mr Tanmaya Mittal</strong> - Director: Operations & Technological Growth.</li>
+              <li><strong>Er Akhilesh Kumar Mittal</strong> - Director (B.Tech, M.Tech): Senior Civil Engineer & Astro Vastu Planner overseeing structural compliance and corporate strategy.</li>
+              <li><strong>Dr Pushpendra Kumar Mittal</strong> - Director (Urban Planner): Urban Planner & Economist guiding master planning and large-scale regional development.</li>
+              <li><strong>Shri Manohar Kant</strong> - Advisor (Retd. IAS): Retd. IAS Officer ensuring administrative governance, regulatory compliance, and quality audits.</li>
+              <li><strong>Mr Tanmaya Mittal</strong> - Director (Operations): Operations head driving technological integration, digital workflows, and sustainable growth.</li>
             </ul>
+          </section>
+
+          <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <dl>
+              <dt><strong>Q: What services does Sanchar Infratech provide?</strong></dt>
+              <dd><p>A: Turnkey civil construction, architectural design, urban master planning, project management consultancy (PMC), and Astro-Vastu spatial planning.</p></dd>
+              <dt><strong>Q: Where is Sanchar Infratech headquartered?</strong></dt>
+              <dd><p>A: Headquartered in Jaipur, Rajasthan, India, servicing infrastructure projects across North India.</p></dd>
+            </dl>
           </section>
         </article>
       </main>
 
-      <footer role="contentinfo" style="display: none;">
-        <p>&copy; 2026 Sanchar Infratech Pvt. Ltd. Jaipur, Rajasthan, India.</p>
+      <footer role="contentinfo">
+        <address>
+          <strong>Sanchar Infratech Pvt. Ltd.</strong><br />
+          Crystal Palm, Bais Godam Circle, Sardar Patel Marg, Jaipur, Rajasthan 302001, India<br />
+          Website: <a href="https://sancharinfratech.com">https://sancharinfratech.com</a>
+        </address>
+        <p>&copy; 2026 Sanchar Infratech Pvt. Ltd. All Rights Reserved.</p>
       </footer>
     </div>
     
