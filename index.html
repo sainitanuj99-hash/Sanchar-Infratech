@@ -29,65 +29,102 @@
     <link rel="canonical" href="https://sancharinfratech.com/" />
     <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Knowledge Base" />
 
-    <!-- Structured Data: Organization & Core Services JSON-LD -->
+    <!-- Structured Data: Organization, Services & FAQPage JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Sanchar Infratech Pvt Ltd",
-      "url": "https://sancharinfratech.com",
-      "logo": "https://sancharinfratech.com/favicon.svg",
-      "description": "Multidisciplinary architecture, civil engineering construction, urban master planning, PMC consultancy, and Astro-Vastu planning in Jaipur, Rajasthan.",
-      "foundingDate": "2001",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Jaipur",
-        "addressRegion": "Rajasthan",
-        "addressCountry": "IN"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "availableLanguage": ["English", "Hindi"]
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Civil Engineering & Architecture Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Civil Engineering & Turnkey Construction",
-              "description": "Turnkey civil infrastructure construction for healthcare, high-rise residential, commercial, and sports stadiums."
-            }
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://sancharinfratech.com/#organization",
+          "name": "Sanchar Infratech Pvt Ltd",
+          "url": "https://sancharinfratech.com",
+          "logo": "https://sancharinfratech.com/favicon.svg",
+          "description": "Multidisciplinary architecture, civil engineering construction, urban master planning, PMC consultancy, and Astro-Vastu planning in Jaipur, Rajasthan.",
+          "foundingDate": "2001",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Jaipur",
+            "addressRegion": "Rajasthan",
+            "addressCountry": "IN"
           },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Multidisciplinary Architectural Design",
-              "description": "Architectural design, 3D BIM modeling, elevation planning, and high-density urban master planning."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Project Management Consultancy (PMC)",
-              "description": "Full lifecycle project management, cost estimation, quality control audits, and site governance."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Astro-Vastu Spatial Consultancy",
-              "description": "Scientific Vastu spatial orientation and astro-architectural planning for balanced civil structures."
-            }
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "availableLanguage": ["English", "Hindi"]
           }
-        ]
-      }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://sancharinfratech.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What turnkey civil construction services does Sanchar Infratech provide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sanchar Infratech offers end-to-end turnkey civil construction for commercial complexes, high-rise residential towers, healthcare facilities (such as Pt. Deen Dayal Upadhyay Hospital valued at Rs 55 Cr), sports grandstands (SMS Stadium expansion), and institutional campuses across Rajasthan and North India."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does Sanchar Infratech integrate Astro-Vastu into architectural designs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our engineering team integrates scientific Vastu Shastra spatial orientation and geomagnetic alignment into modern architectural blueprints, optimizing energy flow, natural illumination, and structural balance without compromising structural physics or aesthetics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is included in Sanchar Infratech's Project Management Consultancy (PMC)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PMC services include pre-construction feasibility, architectural blueprint auditing, 3D BIM modeling, cost estimation, quality assurance checks, 24/7 live site camera surveillance, contractor oversight, and regulatory compliance management."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Sanchar Infratech build IGBC certified green buildings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we implement Indian Green Building Council (IGBC) certified standards, utilizing carbon-neutral construction practices, solar energy integration, energy-efficient MEP utility systems, and eco-conscious building materials."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the typical timeline for completing a civil construction project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timelines depend on project scope: commercial and residential high-rise builds typically range from 12 to 24 months, while custom architectural design and Vastu planning consults are completed in 2 to 6 weeks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can clients track ongoing construction site progress?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sanchar Infratech provides 24/7 live camera site surveillance access, a dedicated project manager, and weekly high-resolution photo and milestone progress reports for complete client transparency."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Sanchar Infratech undertake heritage restoration and sports infrastructure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our portfolio includes major historical conservation projects such as the Amber Palace heritage restoration in Jaipur and state-of-the-art sports facilities like the SMS Stadium expansion."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I request a structural cost estimate or book a consultation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can request an instant structural estimate using our online Construction Cost Estimator on the homepage or book a direct consultation with our Board of Directors via our Contact section or at our Jaipur headquarters."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
   </head>
@@ -106,7 +143,8 @@
       </header>
 
       <main role="main">
-        <article>
+        <!-- Homepage Section Pre-rendered HTML -->
+        <article id="homepage-static">
           <header>
             <h1>Sanchar Infratech Pvt Ltd - 25+ Years of Engineering & Architectural Excellence</h1>
             <p>Sanchar Infratech Pvt Ltd is a premier multidisciplinary civil engineering, turnkey construction, and architectural design consultancy headquartered in Jaipur, Rajasthan, India. Established in 2001, we have delivered over 250 landmark projects spanning more than 12 million square feet.</p>
@@ -122,11 +160,13 @@
             
             <article className="service-card">
               <h3>1. Civil Engineering & Turnkey Construction</h3>
+              <img src="/civil_construction_dusk.jpg" alt="Aerial wide shot of a massive civil construction site at dusk showing rebar grid foundation work and engineers in safety vests inspecting the site" width="800" height="450" />
               <p>End-to-end turnkey construction of commercial complexes, high-rise residential towers, sports grandstands (SMS Stadium expansion), and healthcare facilities (Pt. Deen Dayal Upadhyay Hospital - Rs 55 Cr). Adhering to zero-compromise safety protocols, 24/7 site surveillance, and IGBC green building standards.</p>
             </article>
 
             <article className="service-card">
               <h3>2. Multidisciplinary Architectural Design</h3>
+              <img src="/architectural_design_frame.jpg" alt="Low angle upward perspective through a glass and steel structural frame looking at futuristic glass skyscrapers against a dusk sky" width="800" height="450" />
               <p>Cutting-edge 3D BIM modeling, facade engineering, structural blueprinting, elevation design, and high-density urban master planning.</p>
             </article>
 
@@ -144,28 +184,72 @@
           <section id="leadership">
             <h2>Board of Directors & Executive Leadership</h2>
             <ul>
-              <li><strong>Er Akhilesh Kumar Mittal</strong> - Director (B.Tech, M.Tech): Senior Civil Engineer & Astro Vastu Planner overseeing structural compliance and corporate strategy.</li>
-              <li><strong>Dr Pushpendra Kumar Mittal</strong> - Director (Urban Planner): Urban Planner & Economist guiding master planning and large-scale regional development.</li>
-              <li><strong>Shri Manohar Kant</strong> - Advisor (Retd. IAS): Retd. IAS Officer ensuring administrative governance, regulatory compliance, and quality audits.</li>
-              <li><strong>Mr Tanmaya Mittal</strong> - Director (Operations): Operations head driving technological integration, digital workflows, and sustainable growth.</li>
+              <li><strong>Er Akhilesh Kumar Mittal</strong> - Director (B.Tech, M.Tech): Senior Civil Engineer & Astro Vastu Planner.</li>
+              <li><strong>Dr Pushpendra Kumar Mittal</strong> - Director (Urban Planner): Urban Planner & Economist.</li>
+              <li><strong>Shri Manohar Kant</strong> - Advisor (Retd. IAS): Retd. IAS Officer.</li>
+              <li><strong>Mr Tanmaya Mittal</strong> - Director (Operations): Operations Head.</li>
             </ul>
           </section>
 
           <section id="faq">
             <h2>Frequently Asked Questions</h2>
             <dl>
-              <dt><strong>Q: What services does Sanchar Infratech provide?</strong></dt>
-              <dd><p>A: Turnkey civil construction, architectural design, urban master planning, project management consultancy (PMC), and Astro-Vastu spatial planning.</p></dd>
-              <dt><strong>Q: Where is Sanchar Infratech headquartered?</strong></dt>
-              <dd><p>A: Headquartered in Jaipur, Rajasthan, India, servicing infrastructure projects across North India.</p></dd>
+              <dt><strong>Q: What turnkey civil construction services does Sanchar Infratech provide?</strong></dt>
+              <dd><p>A: Sanchar Infratech offers end-to-end turnkey civil construction for commercial complexes, high-rise residential towers, healthcare facilities (such as Pt. Deen Dayal Upadhyay Hospital valued at Rs 55 Cr), sports grandstands (SMS Stadium expansion), and institutional campuses across Rajasthan and North India.</p></dd>
+              
+              <dt><strong>Q: How does Sanchar Infratech integrate Astro-Vastu into architectural designs?</strong></dt>
+              <dd><p>A: Our engineering team integrates scientific Vastu Shastra spatial orientation and geomagnetic alignment into modern architectural blueprints, optimizing energy flow, natural illumination, and structural balance without compromising structural physics or aesthetics.</p></dd>
+              
+              <dt><strong>Q: What is included in Sanchar Infratech's Project Management Consultancy (PMC)?</strong></dt>
+              <dd><p>A: PMC services include pre-construction feasibility, architectural blueprint auditing, 3D BIM modeling, cost estimation, quality assurance checks, 24/7 live site camera surveillance, contractor oversight, and regulatory compliance management.</p></dd>
+              
+              <dt><strong>Q: Does Sanchar Infratech build IGBC certified green buildings?</strong></dt>
+              <dd><p>A: Yes, we implement Indian Green Building Council (IGBC) certified standards, utilizing carbon-neutral construction practices, solar energy integration, energy-efficient MEP utility systems, and eco-conscious building materials.</p></dd>
+              
+              <dt><strong>Q: What is the typical timeline for completing a civil construction project?</strong></dt>
+              <dd><p>A: Timelines depend on project scope: commercial and residential high-rise builds typically range from 12 to 24 months, while custom architectural design and Vastu planning consults are completed in 2 to 6 weeks.</p></dd>
+              
+              <dt><strong>Q: How can clients track ongoing construction site progress?</strong></dt>
+              <dd><p>A: Sanchar Infratech provides 24/7 live camera site surveillance access, a dedicated project manager, and weekly high-resolution photo and milestone progress reports for complete client transparency.</p></dd>
+              
+              <dt><strong>Q: Does Sanchar Infratech undertake heritage restoration and sports infrastructure?</strong></dt>
+              <dd><p>A: Yes, our portfolio includes major historical conservation projects such as the Amber Palace heritage restoration in Jaipur and state-of-the-art sports facilities like the SMS Stadium expansion.</p></dd>
+              
+              <dt><strong>Q: How can I request a structural cost estimate or book a consultation?</strong></dt>
+              <dd><p>A: You can request an instant structural estimate using our online Construction Cost Estimator on the homepage or book a direct consultation with our Board of Directors via our Contact section or at our Jaipur headquarters.</p></dd>
             </dl>
+          </section>
+        </article>
+
+        <!-- About Page Pre-rendered Static Section -->
+        <article id="about-page-static">
+          <header>
+            <h2>About Sanchar Infratech - 25-Year Architectural & Civil Engineering Legacy</h2>
+            <p>Established in 2001 in Jaipur, Rajasthan, Sanchar Infratech Pvt. Ltd. has grown into one of North India's most respected multidisciplinary architecture, urban planning, and civil engineering consultancies.</p>
+          </header>
+          
+          <section>
+            <h3>Our Mission & Values</h3>
+            <p>To redefine urban landscapes through innovative, sustainable, and high-impact infrastructure solutions - combining technical civil engineering precision with transparent client partnership.</p>
+          </section>
+
+          <section>
+            <h3>Core Domain Capabilities</h3>
+            <ul>
+              <li><strong>Architecture & Design:</strong> Innovative 3D elevation and structural blueprints.</li>
+              <li><strong>Urban Master Planning:</strong> Sustainable township layouts and land development.</li>
+              <li><strong>PMC & Turnkey Construction:</strong> Full lifecycle governance and quality assurance.</li>
+              <li><strong>Structural & MEP Engineering:</strong> Safe, code-compliant, and energy-efficient systems.</li>
+              <li><strong>Astro-Vastu Spatial Planning:</strong> Harmonious geomagnetic spatial alignment.</li>
+              <li><strong>Heritage Conservation:</strong> Historical monument restoration and structural preservation.</li>
+            </ul>
           </section>
         </article>
       </main>
 
       <footer role="contentinfo">
         <address>
-          <strong>Sanchar Infratech Pvt. Ltd.</strong><br />
+          <strong>Sanchar Infratech Pvt. Ltd. Headquarters</strong><br />
           Crystal Palm, Bais Godam Circle, Sardar Patel Marg, Jaipur, Rajasthan 302001, India<br />
           Website: <a href="https://sancharinfratech.com">https://sancharinfratech.com</a>
         </address>
