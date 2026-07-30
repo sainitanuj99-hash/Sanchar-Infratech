@@ -853,25 +853,28 @@ const CalculatorSection = ({ user, showToast }: { user: any; showToast: (msg: st
   });
 
   const rates = {
-    residential: 2000,
-    commercial: 1800,
-    industrial: 1200
+    residential: 1500,
+    commercial: 1500,
+    industrial: 1500
   };
 
   const finishPackages = {
     standard: {
-      title: 'Standard (Base structural build)',
+      title: 'Basic (Base structural build)',
       rateAdd: 0,
+      rateDisplay: 1500,
       desc: 'Robust grey brick structure, concrete slabs, load-bearing pillars, and standard plastering.'
     },
     premium: {
       title: 'Premium (Dream home finishes)',
-      rateAdd: 800,
+      rateAdd: 300,
+      rateDisplay: 1800,
       desc: 'Adds designer vitrified tiles, modular kitchen fittings, branded bathroom utilities, and premium wiring.'
     },
     luxury: {
       title: 'Luxury (Ultra-executive villa)',
-      rateAdd: 1800,
+      rateAdd: 1000,
+      rateDisplay: 2500,
       desc: 'Adds imported Italian marble/teak floors, smart automation, custom ambient lighting grids, and landscaping.'
     }
   };
@@ -1084,7 +1087,7 @@ const CalculatorSection = ({ user, showToast }: { user: any; showToast: (msg: st
                           {pkg.title.split(' ')[0]}
                         </span>
                         <span className={`text-xs font-black ${isSelected ? 'text-teal-400' : 'text-zinc-950'}`}>
-                          {pkg.rateAdd > 0 ? `+₹${pkg.rateAdd}/sqft` : 'Base Rate'}
+                          ₹{pkg.rateDisplay}/sqft
                         </span>
                       </div>
                       <h4 className={`text-xs font-bold mb-1.5 ${isSelected ? 'text-zinc-100' : 'text-zinc-800'}`}>
