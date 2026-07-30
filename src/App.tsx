@@ -2168,7 +2168,7 @@ const Connect = ({ user, showToast }: { user: any; showToast: (msg: string, type
                     </div>
                     <div>
                       <p className="text-[10px] font-black text-zinc-400 uppercase tracking-widest">Corporate Office</p>
-                      <p className="text-zinc-900 font-bold text-sm tracking-tight">602, 6th Floor, Crystal Palm Mall, 22 Godown Circle, Sardar Patel Marg, Jaipur, Rajasthan 302004</p>
+                      <p className="text-zinc-900 font-bold text-sm tracking-tight">702, 7th Floor, Crystal Palm Mall, 22 Godown Circle, Sardar Patel Marg, Jaipur, Rajasthan 302004</p>
                     </div>
                   </div>
                 </div>
